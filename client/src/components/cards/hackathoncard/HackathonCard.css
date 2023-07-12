@@ -1,0 +1,132 @@
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+  }
+
+
+.hackathon-card{
+    margin-top: 10px;
+    width: 200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff !important;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgb(185, 185, 185); */
+    /* border: 2px solid rgb(236, 236, 236); */
+    box-shadow: 0 0 20px rgb(225, 225, 225);
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    
+}
+.hackathon-card:hover {
+    /* transform: translateY(-0.3rem); */
+    scale: 103%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 15px rgb(212, 212, 212);
+    /* box-shadow: -6px 6px 15px rgb(206, 206, 206); */
+}
+.hackathon-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.hackathon-start,
+.hackathon-end {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgb(153, 153, 153);
+}
+.hackathon-start p,
+.hackathon-end p {
+    margin-left: 0.3rem;
+
+}
+.hackathon-card .top {
+    padding-bottom: 1rem;
+}
+.hackathon-url {
+    display: flex;
+    align-items: center;
+}
+.hackathon-url p{
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+}
+.hackathon-url a:hover {
+    transition: all 0.2s linear;
+    text-decoration: underline;
+}
+.hackathon-url a {
+    font-style: italic;
+    color: var(--main-dark-color);
+    font-size: 0.9rem;
+}
+.hackathon-card .bottom .hackathon-register {
+    display: flex;
+    align-items: center;
+    /* font-size: 0.9rem; */
+}
+.hackathon-card .bottom .hackathon-register p {
+    color: var(--main-dark-color);
+    margin-right: 0.1rem;
+    margin-left: 0.3rem;
+
+}
+.hackathon-icon {
+    color: var(--main-dark-color);
+    margin-right: 0.3rem;
+}
+
+.hackathon-card .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.hackathon-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.appy-btn {
+    background-color: var(--main-light-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+.appy-btn a {
+    color: #fff;
+
+}
+.hackathon-bookmark {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: var(--main-light-color);
+}
+.hackathon-bookmark:hover, .appy-btn:hover {
+    transition: all 0.2s linear;
+    background-color: #ff74a5;
+}
+.hackathon-bookmark a {
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.hackathon-bookmark p {
+    color: #fff;
+}
+.bookmark-icon {
+    color: #fff;
+    transform: translateY(0.1rem);
+}

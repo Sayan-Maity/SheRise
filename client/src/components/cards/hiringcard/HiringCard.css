@@ -1,0 +1,142 @@
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+.hiring-card{
+    margin-top: 10px;
+    width: 200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff !important;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgb(185, 185, 185); */
+    /* border: 2px solid rgb(236, 236, 236); */
+    box-shadow: 0 0 20px rgb(225, 225, 225);    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+}
+.hiring-card:hover {
+    /* transform: translateY(-0.3rem); */
+    scale: 103%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 15px rgb(212, 212, 212);
+    /* box-shadow: -6px 6px 15px rgb(206, 206, 206); */}
+.hiring-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hiring-position p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.hiring-name p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.hiring-location {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgb(157, 157, 157);
+
+}
+.hiring-salary {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.hiring-salary p {
+    margin-left: 0.2rem;
+}
+.hiring-qualification {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding: 1rem 0;
+}
+
+
+
+
+
+.hiring-card .bottom {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    padding-top: 1rem;
+    border-top: 1px solid rgb(212, 212, 212);
+}
+.hiring-card .bottom .hiring-deadline {
+    display: flex;
+    align-items: center;
+}
+.hiring-card .bottom .hiring-deadline p {
+    margin-left: 0.2rem;
+    color: var(--main-dark-color);
+}
+.hiring-card .bottom .hiring-bookmark {
+    display: flex;
+    align-items: center;
+}
+.hiring-card .bottom .hiring-bookmark a{
+    display: flex;
+    color: var(--main-dark-color);
+    align-items: center;
+    font-size: 1rem;
+}
+
+.hiring-icon {
+    margin-right: 0.3rem;
+    color: var(--main-dark-color);
+}
+
+
+
+/* ============================================== */
+.hiring-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.appy-btn {
+    background-color: var(--main-light-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+.hiring-bookmark {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: var(--main-light-color);
+}
+.hiring-bookmark:hover, .appy-btn:hover {
+    transition: all 0.2s linear;
+    background-color: #ff74a5;
+}
+.hiring-bookmark a {
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.hiring-bookmark p {
+    color: #fff !important;
+}
+.bookmark-icon {
+    color: #fff;
+    transform: translateY(0.1rem);
+}
+.bookmark-icon {
+    color: #fff;
+    transform: translateY(0.1rem);
+}

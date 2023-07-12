@@ -1,0 +1,152 @@
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.conference-card{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    width: 200px;
+    /* box-shadow: 0 0 10px rgb(185, 185, 185); */
+    /* border: 2px solid rgb(236, 236, 236); */
+    box-shadow: 0 0 20px rgb(225, 225, 225);
+    border-radius: 10px;
+    width: 95% !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.conference-card:hover {
+    /* transform: translateY(-0.3rem); */
+    scale: 103%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 15px rgb(212, 212, 212);
+    /* box-shadow: -6px 6px 15px rgb(206, 206, 206); */}
+
+.conference-title .conference-name {
+    display: flex;
+    align-items: center;
+}
+.conference-title .conference-name p{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #333;
+}
+.conference-title .conference-location {
+    display: flex;
+    align-items: center;
+
+}
+.conference-title .conference-date {
+    align-items: center;
+    display: flex;
+    
+}
+.conference-title .conference-location p,
+.conference-title .conference-date p {
+    color: rgb(157, 157, 157);
+    margin-left: 0.5rem;
+    font-size: 0.9rem !important;
+}
+.conference-icon {
+    color: var(--main-dark-color);
+    margin-right: 0.3rem;
+}
+.conference-description {
+    padding: 1rem 0;
+}
+.conference-fee p,
+.conference-description p {
+    font-size: 0.9rem;
+}
+.conference-description p {
+    line-height: 1.3;
+}
+.conference-fee {
+    display: flex;
+    align-items: center;
+}
+.conference-fee p{
+    color: var(--main-dark-color);
+    margin-left: 0.3rem;
+}
+.conference-card .bottom {
+    padding-top: 0.5rem;
+    border-top: 1px solid rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conference-card .bottom .conference-bookmark {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.conference-card .bottom .conference-bookmark a{
+    display: flex;
+    color: var(--main-dark-color);
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+p.loading {
+    font-size: 3rem;
+    z-index: 50;
+}
+
+
+
+
+/* ============================================== */
+.conference-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.appy-btn {
+    background-color: var(--main-light-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+.conference-bookmark {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: var(--main-light-color);
+}
+.conference-bookmark:hover, .appy-btn:hover {
+    transition: all 0.2s linear;
+    background-color: #ff74a5;
+}
+.conference-bookmark a {
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.conference-bookmark p {
+    color: #fff !important;
+}
+.bookmark-icon {
+    color: #fff;
+    transform: translateY(0.1rem);
+}
+.bookmark-icon {
+    color: #fff;
+    transform: translateY(0.1rem);
+}

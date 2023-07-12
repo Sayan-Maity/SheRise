@@ -1,0 +1,136 @@
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+
+.workshop-card{
+    margin-top: 10px;
+    width: 200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff !important;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgb(185, 185, 185); */
+    /* border: 2px solid rgb(236, 236, 236); */
+    box-shadow: 0 0 20px rgb(225, 225, 225);    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+.workshop-card:hover {
+    /* transform: translateY(-0.3rem); */
+    scale: 103%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 15px rgb(212, 212, 212);
+    /* box-shadow: -6px 6px 15px rgb(206, 206, 206); */}
+.workshop-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.workshop-location,
+.workshop-date,
+.workshop-time {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.workshop-location,
+.workshop-date,
+.workshop-time {
+    color: rgb(146, 146, 146);
+    
+}
+.workshop-price p,
+.workshop-date p,
+.workshop-time p {
+    margin-left: 0.3rem;
+}
+.workshop-card .middle {
+    padding: 1rem 0;
+}
+
+.workshop-card .middle p.workshop-description:nth-child(1) {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+}
+.workshop-card .middle p.workshop-description:nth-child(2) {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    
+}
+.workshop-card .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(232, 232, 232);
+}
+.workshop-card .bottom .workshop-price {
+    display: flex;
+    align-items: center;
+}
+.workshop-card .bottom .workshop-price p {
+    color: var(--main-dark-color);
+}
+
+
+.workshop-card .bottom .workshop-bookmark {
+    display: flex;
+    align-items: center;
+}
+.workshop-card .bottom .workshop-bookmark a{
+    display: flex;
+    color: var(--main-dark-color);
+    align-items: center;
+    font-size: 1rem;
+}
+.workshop-icon {
+    margin-right: 0.3rem;
+    color: var(--main-dark-color);
+}
+
+
+
+
+
+/* ============================================== */
+.workshop-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.appy-btn {
+    background-color: var(--main-light-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--main-dark-color);
+    cursor: pointer;
+}
+.workshop-bookmark {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: var(--main-light-color);
+}
+.workshop-bookmark:hover, .appy-btn:hover {
+    transition: all 0.2s linear;
+    background-color: #ff74a5;
+}
+.workshop-bookmark a {
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.workshop-bookmark p {
+    color: #fff !important;
+}
+.bookmark-icon {
+    color: #fff !important;
+    transform: translateY(0.1rem);
+}
