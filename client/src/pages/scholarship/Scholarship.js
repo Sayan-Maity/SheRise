@@ -8,10 +8,10 @@ import Footer from "../../components/footer/Footer";
 
 let stripePromise;
 
+// console.log(process.env.REACT_APP_STRIPE_KEY)
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe("pk_test_51KMtylSC9OuZw3mDY0BLEY4yjgeRb7wFMLmLh6LA1aGPmLPfmqvVWjlAVAxPjsbR5p82yhXWnLSUAI3gQTY3QF9B00D7p89nhY");
-    // stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_KEY}`);
+    stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_KEY}`);
   }
 
   return stripePromise;
