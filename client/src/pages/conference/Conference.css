@@ -1,0 +1,174 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+.conference {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 100vh;
+    overflow-y: scroll;
+    /* border-radius: 10px; */
+    padding-bottom: 2rem;
+}
+/* =============  Scrollbar  ============= */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(157, 157, 157);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #78d7c3;
+}
+
+.conferences-con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.conference-banner-section {
+    background: linear-gradient(to right, #ffc6da, #ff6a9e) ;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+.conference-banner-section .left {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.conference-banner-section .right {
+    display: flex;
+    flex-direction: row;
+    
+}
+.conference-banner-image {
+    height: 40vh;
+    width: auto;
+}
+.conference-heading {
+    font-size: 4rem !important;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ff6a9e;
+}
+
+.conference-searchbar {
+    /* background-color: red; */
+    /* padding: 1rem; */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.conference-searchbar input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    /* border: 1px solid #ffc6da; */
+}
+.conference-searchbar .search-btn {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: var(--main-light-color);
+    cursor: pointer;
+}
+.conference-searchbar .search-btn:hover {
+    background-color: #ff76a6;
+
+}
+.searchbar-card-opportunity {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.searchbar-card-opportunity .searchbar-card {
+    width: 75%;
+    /* background-color: aquamarine; */
+}
+.searchbar-card-opportunity .opportunity {
+    background-color: #fff;
+    width: 25% !important;
+    height: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.searchbar-card-opportunity .opportunity-card .opportunity-heading {
+    display: flex;
+    justify-content: center;
+}
+.searchbar-card-opportunity .opportunity-card .opportunity-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.searchbar-card-opportunity .opportunity-card .opportunity-list1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.searchbar-card-opportunity .opportunity-card .opportunity-list1 .left{
+    /* background-color: red; */
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(206, 206, 206);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.searchbar-card-opportunity .opportunity-card .opportunity-list1 .right p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+.opportunity-image1 {
+    background: url("../../assets/png/Loreal-logo.png");
+}
+.opportunity-image2 {
+    background: url("../../assets/png/servicenow-logo.png");
+}
+.opportunity-image3 {
+    background: url("../../assets/png/iim-lucknow-logo.png");
+}
+
+
+
+
