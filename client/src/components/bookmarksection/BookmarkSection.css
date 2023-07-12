@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+.all-bookmark-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--main-dark-color);
+}
+.bookmarksection {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 1rem;
+    
+}
