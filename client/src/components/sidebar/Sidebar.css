@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+  
+.container{
+    display:flex;
+    background-color: rgb(235, 235, 235);
+}
+main{
+    width: 100%;
+    /* padding: 20px; */
+}
+.logo{
+    /* border-radius: 50%; */
+    width: 40px;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    text-shadow: 0 0 10px #fff;
+}
+.sidebar{
+    background: #1f000b;
+    float: left;
+    color: #fff;
+    /* position: fixed; */
+    height: 100vh;
+    width: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* margin-left: 1rem; */
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top_section{
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+.logo{
+    transform: translateY(0.5rem);
+    height: 4rem;
+    width: auto;
+    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.link{
+    display: flex;
+    color: rgb(130, 130, 130);
+    /* background-color: aliceblue; */
+    padding: 0rem 1rem;
+    gap: 1.6rem;
+    /* transition: all 0.35s; */
+    font-family: 'Poppins', sans-serif;
+    border-right: 4px solid transparent;
+    /* margin-right: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.link_text p {
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: nowrap;
+    word-break: keep-all;
+    line-break: loose;
+    font-size: 0.9rem;
+
+}
+.link:hover{
+    background:fff;
+    color: var(--main-light-color);
+    transition: all 0.1s linear; 
+}
+.active{
+    border-right: 4px solid var(--main-light-color);
+    color: var(--main-light-color);
+}
+.icon, .link_text{
+    font-size: 20px;
+}
+.bottom_section .link:nth-child(1){
+    margin-bottom: -0.6rem;
+}
