@@ -1,0 +1,563 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+:root {
+  --main-light-color: #FF81AE;
+  --main-dark-color: #ff2e77;
+  --main-opacity-color: #ff81ad2d;
+  --main-font-size: 0.9rem;
+}
+
+/* =============  Scrollbar  ============= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(157, 157, 157);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--main-light-color);
+}
+
+.livechat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  align-items: flex-start;
+  overflow-y: scroll;
+  /* background-color: rgb(255, 241, 241); */
+  /* background-color: rgb(243, 243, 243); */
+  justify-content: space-between;
+}
+.livechat-inner {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 2rem 0;
+  margin: auto;
+  /* justify-content: flex-start; */
+  max-height: 100vh;
+  width: 90%;
+  /* gap: 2rem; */
+}
+
+/* =======================  Group Mentor Section  ======================= */
+
+.mentor-group {
+  width: 80%;
+  height: fit-content;
+  background-color: #fff;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+.mentor-groupchat-div {
+
+  padding: 1rem 2rem ;
+  padding-bottom: 0 !important;
+  padding-top: 2rem !important;
+  /* background-color: rgb(128, 255, 73); */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.mentor-groupchat-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.mentor-groupchat-section {
+  /* background-color: #d5bbff; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px solid rgb(208, 208, 208);
+  padding: 0.5rem 0;
+  padding-bottom: 2rem !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mentor-groupchat-card {
+  background-color: #fff;
+  width: 19.5rem;
+  padding: 2rem;
+  padding-bottom: 3rem !important;
+  padding-top: 2rem !important;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(212, 212, 212);
+}
+.mentor-groupchat-card:hover {
+  transition: all 0.3s ease-in-out;
+  scale: 102%;
+  box-shadow: 0 5px 15px rgb(218, 218, 218);
+
+}
+.mentor-groupchat-card .top {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.mentor-groupchat-card .top .mentor-groupchat-img {
+  height: 4rem;
+  width: 4rem;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: rgb(222, 222, 222);
+}
+.mentor-groupchat-card .top .groupchat-image1 {
+  background-image: url("../../assets/images/ResumeWorkshop.jpg");
+}
+.mentor-groupchat-card .top .groupchat-image2 {
+  background-image: url("../../assets/images/DsaWorkshop.webp");
+}
+.mentor-groupchat-card .top .groupchat-image3 {
+  background-image: url("../../assets/images/HrWorkshop.jfif");
+}
+.mentor-groupchat-desc {
+  display: flex;
+  flex-direction: column;
+  color: rgb(113, 113, 113);
+
+}
+.mentor-groupchat-desc .name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(96, 96, 96);
+  /* color: var(--main-light-color); */
+}
+.mentor-groupchat-desc .date,
+.mentor-groupchat-desc .admin {
+  font-size: 0.8rem;
+  color: rgb(113, 113, 113);
+
+  
+}
+.mentor-groupchat-desc .admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mentor-groupchat-desc .admin p:nth-child(2) {
+  background-color: var(--main-opacity-color);
+  color: var(--main-dark-color);
+  padding: 0 0.3rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+.groupchat-divider {
+  height: 1px;
+  background-color: rgb(201, 201, 201);
+  width: 100%;
+  margin: 0.8rem 0;
+}
+.mentor-groupchat-card .bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(113, 113, 113);
+
+}
+.mentor-groupchat-card .bottom .all-member {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+.group-members-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between ;
+  width: 100%;
+  
+}
+.group-members-images .images {
+  /* background-color: #d5bbff; */
+
+  position: relative;
+  /* transform: translateX(-5rem); */
+}
+.group-members-images .images .grp-image {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.group-members-images .images .image1 {
+  background-image: url("../../assets/images/mentor2.webp");
+  transform: translate(1rem);
+  z-index: 3;
+  background-color: rgb(228, 228, 228);
+}
+.group-members-images .images .image2 {
+  background-image: url("../../assets/images/mentor3.png");
+  transform: translateX(2rem);
+  z-index: 4;
+  background-color: rgb(228, 228, 228);
+}
+.group-members-images .images .image3 {
+  background-image: url("../../assets/images/mentor4.png");
+  transform: translateX(3rem);
+  z-index: 5;
+  background-color: rgb(228, 228, 228);
+}
+.group-members-images .images .image4 {
+  transform: translateX(4rem);
+  z-index: 5;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+.more-images {
+  font-size: 0.8rem;
+  transform: translateY(1rem);
+}
+
+
+
+
+
+
+
+
+/* ======================  Individual Mentor Section  ======================= */
+
+.individual-mentor-div {
+  padding: 1rem 2rem;
+  /* background-color: aqua; */
+
+}
+.individual-mentor-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.searchbar-individual-mentors {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.searchbar-individual-mentors input {
+  outline: none;
+  border: 1px solid var(--main-light-color);
+  border-radius: 10px;
+  padding: 0.6rem 1.5rem;  
+  color: var(--main-light-color);
+}
+.search-mentor-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.6rem 1.5rem;  
+  font-size: 0.9rem;
+  background-color: var(--main-light-color);
+  color: #fff;
+
+}
+.searchbar-individual-mentors input::placeholder {
+  color: var(--main-light-color);
+  
+}
+
+.individual-mentor-section {
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem 0 ;
+}  
+.individual-mentor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  width: 19.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(212, 212, 212);
+}
+.individual-mentor-card:hover {
+  transition: all 0.3s ease-in-out;
+  scale: 102%;
+  box-shadow: 0 3px 15px rgb(218, 218, 218);
+
+}
+.individual-mentor-card .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.individual-mentor-desc {
+  line-height: 1.4;
+  color: rgb(113, 113, 113);
+}
+.individual-mentor-desc .name{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(96, 96, 96);
+  /* color: var(--main-light-color); */
+}
+.individual-mentor-desc .name p {
+  line-height: 1.2;
+}
+.individual-mentor-desc .company {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.individual-mentor-desc .profession {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+.individual-mentor-card .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.individual-mentor-card .bottom .linkedin ,
+.individual-mentor-card .bottom .twitter ,
+.individual-mentor-card .bottom .mail  {
+  /* background-color: rgb(255, 218, 218); */
+  /* background-color: rgb(240, 240, 240); */
+  border: 1px solid rgb(202, 202, 202);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 2.2rem;
+  width: 2.2rem;
+  padding: 0.5rem ;
+  font-size: 1rem;
+  border-radius: 50%;
+  
+}
+.individual-mentor-card .bottom .linkedin a,
+.individual-mentor-card .bottom .twitter a,
+.individual-mentor-card .bottom .mail a {
+  color: var(--main-light-color);
+}
+.individual-mentor-card .bottom .linkedin:hover ,
+.individual-mentor-card .bottom .twitter:hover ,
+.individual-mentor-card .bottom .mail:hover  {
+  
+}
+.individual-mentor-card .top .individual-mentor-img {
+  height: 4rem;
+  width: 4rem;
+  padding: 2.2rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 240);
+  
+}
+.indiv-mentor1 {
+  background-image: url("../../assets/images/mentor10.jfif");
+}
+.indiv-mentor2 {
+  background-image: url("../../assets/images/mentor2.webp");
+}
+.indiv-mentor3 {
+  background-image: url("../../assets/images/mentor11.jfif");
+}
+.indiv-mentor4 {
+  background-image: url("../../assets/images/mentor4.png");
+}
+.indiv-mentor5 {
+  background-image: url("../../assets/images/mentor5.png");
+}
+.indiv-mentor6 {
+  background-image: url("../../assets/images/mentor6.png");
+}
+.indiv-mentor7 {
+  background-image: url("../../assets/images/mentor7.png");
+}
+.indiv-mentor8 {
+  background-image: url("../../assets/images/mentor8.png");
+}
+.indiv-mentor9 {
+  background-image: url("../../assets/images/mentor21.png");
+}
+
+
+
+
+
+/* ========================  Live People Section  ========================= */
+
+.live-people-div {
+  float: right;
+  position: sticky;
+  width: 20%;
+  /* overflow-y: scroll; */
+  /* scroll-behavior: smooth; */
+  /* background-color: #ffe1ec; */
+  background-color: #fff;
+  max-height: 25rem;
+  top: 0;
+  padding: 1rem ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.live-people-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgb(222, 222, 222);
+  padding: 0.2rem 0.5rem;
+}
+.live-people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-people .live-people-image {
+  height: 2rem;
+  width: 2rem;
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+}
+.live-people1 {
+  background-image: url("../../assets/images/mentor.jpg");
+}
+.live-people2 {
+  background-image: url("../../assets/images/mentor2.webp");
+}
+.live-people3 {
+  background-image: url("../../assets/images/mentor11.jfif");
+}
+.live-people4 {
+  background-image: url("../../assets/images/mentor21.png");
+}
+
+.live-people-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.live-people .live-people-image::after {
+  content: "";
+  height: 0.2rem;
+  width: 0.2rem;
+  padding: 0.1rem;
+  color: #333;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(0.6rem, 0.2rem);
+  background-color: var(--main-light-color);
+  border: 2px solid #fff;
+}
+.live-people-desc {
+  line-height: 1.1;
+}
+.live-people-desc .name {
+  font-size: 0.7rem;
+  color: rgb(113, 113, 113);
+  /* color: var(--main-light-color); */
+  
+}
+.live-people-desc .place {
+  font-size: 0.6rem;
+  color: rgb(113, 113, 113);
+  /* color: var(--main-light-color); */
+}
+.live-people-chat-icon {
+  font-size: 1.5rem;
+  color: rgb(113, 113, 113);
+  /* color: var(--main-light-color); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================== One-to-One Chatting ====================== */
+  .ce-my-message-bubble {
+    background-color: var(--main-light-color) !important;
+  }
+  
+  .ce-chat-title-text {
+    color: var(--main-light-color) !important;
+  }
+  
+  .ce-chat-subtitle-text {
+    color: var(--main-light-color) !important;
+    font-weight: 600;
+  }
+  
+  #ce-send-message-button {
+    position: relative !important;
+    bottom: 2px !important;
+    left: 1px !important;
+    background-color: var(--main-light-color) !important;
+  }
+  
+  .ce-my-message-timestamp {
+    color: var(--main-light-color) !important;
+  }
+  
+  .transition-3 {
+    transition: all 0.33s ease;
+    -webkit-transition: all 0.33s ease;
+    -moz-transition: all 0.33s ease;
+  }
+  
+  .transition-5 {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+  }
+  
