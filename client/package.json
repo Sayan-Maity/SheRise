@@ -3,31 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "^5.0.1",
+    "@ant-design/icons": "^5.1.4",
     "@magic-ext/auth": "^1.4.1",
-    "@stripe/stripe-js": "^1.46.0",
+    "@stripe/stripe-js": "^1.54.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.3",
-    "framer-motion": "^8.5.0",
-    "js-cookie": "^3.0.1",
+    "axios": "^1.4.0",
+    "framer-motion": "^10.12.18",
+    "js-cookie": "^3.0.5",
     "magic-sdk": "^18.4.1",
-    "openai": "^3.1.0",
+    "openai": "^3.3.0",
     "react": "^18.2.0",
     "react-chat-engine": "^1.11.28",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.0",
-    "react-icons": "^4.7.1",
-    "react-image-webp": "^0.8.0",
-    "react-router-dom": "^6.7.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "NODE_ENV=production react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,8 +49,6 @@
     ]
   },
   "devDependencies": {
-    "webpack": "^5.88.1",
-    "webpack-bundle-analyzer": "^4.9.0",
-    "webpack-cli": "^5.1.4"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
