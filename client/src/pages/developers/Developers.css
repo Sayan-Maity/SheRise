@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-font-size: 0.9rem;
+}
+
+.developers .heading p {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.developers .heading p:nth-child(1) {
+    position: relative;
+    color: var(--main-dark-color);
+    z-index: 3;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    /* background: linear-gradient(to right, #41265d, #742dbb); */
+    background: linear-gradient(to right, var(--main-dark-color), var(--main-light-color));
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.developers .heading p:nth-child(2) {
+    position: absolute;
+    transform: translate(-2rem, -9rem);
+    color: #ff81ad2d;
+    font-size: 5rem;
+    z-index: 2;
+    
+}
+.developers {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 233, 233); */
+}
+section.developer-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding-top: 1rem;
+    padding-bottom: 8rem;
+}
+.outer-card {
+    /* background-color: red; */
+    border: 2px solid rgb(218, 218, 218);
+    padding: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    /* margin-bottom: 5rem; */
+}
+.outer-card:hover {
+    transition: all 0.2s ease-in;
+    scale: 103%;
+    box-shadow: 0 0 10px rgb(206, 206, 206);
+
+}
+.image {
+    /* background-color: yellow; */
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.avatar {
+    /* border: 1px solid #333; */
+    background-color: rgb(133, 133, 133);
+    box-shadow: 0 0 5px rgb(165, 165, 165);
+    height: 10rem;
+    width: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 4;
+}
+.image .avatar-overlay {
+    position: absolute;
+    height: 10.2rem;
+    width: 10.2rem;
+    z-index: 3;
+    border-radius: 50%;
+    transform: translate(0.2rem, -0.1rem);
+    background: linear-gradient(to left, var(--main-light-color), transparent);
+    /* transform: translate(0.3rem, -0.1rem); */
+    /* background-color: #78d7c3; */
+    
+}
+.image .avatar-overlay2 {
+    position: absolute;
+    height: 10.2rem;
+    width: 10.2rem;
+    z-index: 2;
+    border-radius: 50%;
+    transform: translate(0.6rem, -0.1rem);
+    background: linear-gradient(to left, #ffc6da, transparent);
+    /* transform: translate(0.6rem, -0.3rem); */
+    /* background-color: #bcf5e9; */
+
+}
+.sayan-avatar {
+    background-image: url("../../assets/images/sayan_avatar.jpg");
+}
+.shrestha-avatar {
+    background-image: url("../../assets/images/shrestha_avatar2.jfif");
+}
+.description {
+    /* background-color: red; */
+    margin-top: 0.5rem;
+    
+}
+
+.description .name p:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+.description .name p:nth-child(2) {
+    font-size: 0.9rem;
+    transform: translateY(-0.4rem);
+    color: rgb(136, 136, 136);
+}
+.description .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.description .buttons a {
+    background-color: var(--main-light-color);
+    padding: 0.4rem 1.5rem;
+    border-radius: 4px;
+    color: #333;
+    font-size: 0.9rem;
+    box-shadow: 0 0 5px rgb(209, 209, 209);
+}
+.description .buttons a:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #ffa6c5;
+
+}
