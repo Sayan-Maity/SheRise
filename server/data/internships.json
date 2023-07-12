@@ -1,0 +1,114 @@
+{
+  "internships": [
+    {
+      "company": "Infoguide Corporation",
+      "location": "Delhi, India",
+      "position": "Software Development Intern",
+      "start_date": "January 15, 2023",
+      "end_date": "April 15, 2023",
+      "responsibilities": "Collaborate with development team on new features and enhancements",
+      "qualifications": "Currently pursuing a degree in Computer Science or related field",
+      "working": "In-Office",
+      "compensation": "Paid"
+    },
+    {
+      "company": "MiniTech Firm",
+      "location": "Hyderabad, India",
+      "position": "Software Development Intern",
+      "start_date": "February 15, 2023",
+      "end_date": "May 15, 2023",
+      "responsibilities": "Develop and maintain software applications using Python and JavaScript",
+      "qualifications": "Strong programming skills in Python and JavaScript",
+      "working": "Remote only",
+      "compensation": "Paid"
+    },
+    {
+      "company": "Codebuild Education",
+      "location": "Noida, India",
+      "position": "Software Development Intern",
+      "start_date": "May 15, 2023",
+      "end_date": "September 15, 2023",
+      "responsibilities": "Debug and troubleshoot code",
+      "qualifications": "Experience with web development frameworks such as Django or Node.js",
+      "working": "Remote only",
+      "compensation": "Unpaid"
+    },
+    {
+      "company": "Anakan Organization",
+      "location": "Kolkata, India",
+      "position": "Software Development Intern",
+      "start_date": "July 15, 2023",
+      "end_date": "November 15, 2023",
+      "responsibilities": "Participate in code reviews",
+      "qualifications": "Strong problem-solving and communication skills",
+      "working": "In-Office",
+      "compensation": "Paid"
+    },
+    {
+      "company": "Analytica Inc.",
+      "location": "Pune, India",
+      "position": "Data Science Intern",
+      "start_date": "July 15, 2023",
+      "end_date": "October 15, 2023",
+      "responsibilities": "Analyze and visualize data using Python and SQL",
+      "qualifications": "Currently pursuing a degree in Data Science or related field",
+      "working": "In-Office",
+      "compensation": "Paid"
+    },
+    {
+      "company": "Bharati Industry",
+      "location": "Chennai, India",
+      "position": "Marketing Intern",
+      "start_date": "May 1, 2023",
+      "end_date": "July 31, 2023",
+      "responsibilities": "Assist with social media campaigns and content creation",
+      "qualifications": "Currently pursuing a degree in Marketing or related field",
+      "working": "Remote only",
+      "compensation": "Unpaid"
+    },
+    {
+      "company": "DefCorp",
+      "location": "Delhi, India",
+      "position": "Finance Intern",
+      "start_date": "June 1, 2023",
+      "end_date": "August 31, 2023",
+      "responsibilities": "Assist with financial analysis and reporting",
+      "qualifications": "Currently pursuing a degree in Finance or related field",
+      "working": "Remote only",
+      "compensation": "Paid"
+    },
+    {
+      "company": "GHI Industries",
+      "location": "Mumbai, India",
+      "position": "Human Resources Intern",
+      "start_date": "June 15, 2023",
+      "end_date": "September 15, 2023",
+      "responsibilities": "Assist with onboarding and employee training",
+      "qualifications": "Currently pursuing a degree in Human Resources or related field",
+      "working": "Remote only",
+      "compensation": "Unpaid"
+    },
+    {
+      "company": "JKL Enterprises",
+      "location": "Gurgaon, India",
+      "position": "Graphic Design Intern",
+      "start_date": "May 10, 2023",
+      "end_date": "August 10, 2023",
+      "responsibilities": "Design marketing materials using Adobe Creative Suite",
+      "qualifications": "Currently pursuing a degree in Graphic Design or related field",
+      "working": "In-Office",
+      "compensation": "Paid"
+    },
+    {
+      "company": "MNO Group",
+      "location": "Pune, India",
+      "position": "Public Relations Intern",
+      "start_date": "July 1, 2023",
+      "end_date": "September 30, 2023",
+      "responsibilities": "Assist with media outreach and event planning",
+      "qualifications": "Currently pursuing a degree in Public Relations or related field",
+      "working": "Remote only",
+      "compensation": "Unpaid"
+    }
+  ]
+}

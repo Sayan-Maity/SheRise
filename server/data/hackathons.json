@@ -1,0 +1,83 @@
+{
+    "hackathons": [{
+            "id": "1",
+            "name": "CodeFest",
+            "url": "https://codefest.com",
+            "startDate": "2023-01-06 12:00 AM IST",
+            "endDate": "2023-01-10 12:05 PM IST",
+            "participants": "200+"
+        },
+        {
+            "id": "2",
+            "name": "Hack-A-Thon",
+            "url": "https://hack-a-thon.com",
+            "startDate": "2023-03-15 12:00 AM IST",
+            "endDate": "2023-03-20 12:05 PM IST",
+            "participants": "500+"
+        },
+        {
+            "id": "3",
+            "name": "Code Sprint",
+            "url": "https://codesprint.com",
+            "startDate": "2023-05-01 12:00 AM IST",
+            "endDate": "2023-05-05 12:05 PM IST",
+            "participants": "300+"
+        },
+        {
+            "id": "4",
+            "name": "Hackathon X",
+            "url": "https://hackathonx.com",
+            "startDate": "2023-07-10 12:00 AM IST",
+            "endDate": "2023-07-15 12:05 PM IST",
+            "participants": "400+"
+        },
+        {
+            "id": "5",
+            "name": "CodeHack",
+            "url": "https://codehack.com",
+            "startDate": "2023-09-01 12:00 AM IST",
+            "endDate": "2023-09-05 12:05 PM IST",
+            "participants": "250+"
+        },
+        {
+            "id": "6",
+            "name": "HackFest",
+            "url": "https://hackfest.com",
+            "startDate": "2023-11-01 12:00 AM IST",
+            "endDate": "2023-11-05 12:05 PM IST",
+            "participants": "350+"
+        },
+        {
+            "id": "7",
+            "name": "CodeCamp",
+            "url": "https://codecamp.com",
+            "startDate": "2023-01-20 12:00 AM IST",
+            "endDate": "2023-01-25 12:05 PM IST",
+            "participants": "450+"
+        },
+        {
+            "id": "8",
+            "name": "Hack-A-Thon 2.0",
+            "url": "https://hack-a-thon2.com",
+            "startDate": "2023-03-25 12:00 AM IST",
+            "endDate": "2023-03-30 12:05 PM IST",
+            "participants": "550+"
+        },
+        {
+            "id": "9",
+            "name": "Code Sprint 2.0",
+            "url": "https://codesprint2.com",
+            "startDate": "2023-05-11 12:00 AM IST",
+            "endDate": "2023-05-15 12:05 PM IST",
+            "participants": "350+"
+        },
+        {
+            "id": "10",
+            "name": "Hackathon X 2.0",
+            "url": "https://hackathonx2.com",
+            "startDate": "2023-07-20 12:00 AM IST",
+            "endDate": "2023-07-25 12:05 PM IST",
+            "participants": "450+"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+  "conferences": [
+    {
+      "name": "International Conference on Machine Learning and Data Science (ICMLDS)",
+      "description": "The ICMLDS is a premier conference for researchers and practitioners in the fields of machine learning and data science. The conference features keynote talks, oral presentations, and poster sessions.",
+      "location": "New Delhi, India",
+      "dates": "January 25-30, 2023",
+      "registration_fee": "INR 50,000"
+    },
+    {
+      "name": "International Conference on Cybersecurity (ICC)",
+      "description": "The ICC is a leading conference on cybersecurity, featuring talks and workshops on a wide range of topics including network security, cloud security, and cryptography.",
+      "location": "Mumbai, India",
+      "dates": "February 15-20, 2023",
+      "registration_fee": "INR 40,000"
+    },
+    {
+      "name": "International Conference on Blockchain (ICB)",
+      "description": "The ICB is a conference focused on blockchain technology and its applications. The conference features talks, demos, and workshops on topics such as smart contracts, decentralized finance, and supply chain management.",
+      "location": "Bangalore, India",
+      "dates": "March 10-15, 2023",
+      "registration_fee": "INR 45,000"
+    },
+    {
+      "name": "International Conference on Artificial Intelligence (ICAI)",
+      "description": "The ICAI is a leading conference on artificial intelligence, featuring talks and workshops on a wide range of topics including machine learning, natural language processing, and robotics.",
+      "location": "Hyderabad, India",
+      "dates": "April 25-30, 2023",
+      "registration_fee": "INR 60,000"
+    },
+    {
+      "name": "International Conference on Cloud Computing (ICCC)",
+      "description": "The ICCC is a conference focused on cloud computing, featuring talks and workshops on topics such as cloud architecture, security, and cost optimization.",
+      "location": "Chennai, India",
+      "dates": "May 15-20, 2023",
+      "registration_fee": "INR 50,000"
+    },
+    {
+      "name": "International Conference on DevOps (ICD)",
+      "description": "The ICD is a conference focused on DevOps, featuring talks and workshops on topics such as continuous delivery, infrastructure as code, and testing.",
+      "location": "Pune, India",
+      "dates": "June 5-10, 2023",
+      "registration_fee": "INR 45,000"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "workshops": [
+    {
+      "title": "Intro to Machine Learning",
+      "description": "In this workshop, you will learn the basics of machine learning and how to implement simple algorithms in Python. Topics covered include linear regression, logistic regression, and decision trees.",
+      "location": "Mumbai, India",
+      "date": "January 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 18,000"
+    },
+    {
+      "title": "Advanced Machine Learning",
+      "description": "Take your machine learning skills to the next level with this advanced workshop. Topics covered include neural networks, deep learning, and natural language processing. Prerequisite: Intro to Machine Learning workshop or equivalent experience.",
+      "location": "Delhi, India",
+      "date": "February 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 30,000"
+    },
+    {
+      "title": "Introduction to Blockchain",
+      "description": "Learn about the basics of blockchain technology and how to build simple decentralized applications (DApps) on the Ethereum platform. No prior knowledge of blockchain required.",
+      "location": "Bengaluru, India",
+      "date": "March 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 24,000"
+    },
+    {
+      "title": "Data Visualization with Matplotlib and Seaborn",
+      "description": "Learn how to create beautiful and informative data visualizations using the Matplotlib and Seaborn libraries in Python. This workshop is suitable for beginners.",
+      "location": "Chennai, India",
+      "date": "April 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 15,000"
+    },
+    {
+      "title": "Intro to Cybersecurity",
+      "description": "Learn about the fundamentals of cybersecurity and how to protect your systems and data from threats. Topics covered include network security, password management, and threat intelligence.",
+      "location": "Bangalore, India",
+      "date": "June 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 20,000"
+    },
+    {
+      "title": "Intro to Data Science",
+      "description": "Learn about the basics of data science and how to use Python to perform data analysis. Topics covered include data manipulation, visualization, and basic machine learning techniques.",
+      "location": "Hyderabad, India",
+      "date": "July 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 25,000"
+    },
+    {
+      "title": "Intro to Cloud Computing",
+      "description": "Learn about the basics of cloud computing and how to use cloud services to build and deploy applications. Topics covered include cloud architecture, security, and cost optimization.",
+      "location": "Pune, India",
+      "date": "August 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 30,000"
+    },
+    {
+      "title": "Intro to DevOps",
+      "description": "Learn about the principles of DevOps and how to implement continuous delivery and deployment pipelines. Topics covered include version control, testing, and infrastructure as code.",
+      "location": "Ahmedabad, India",
+      "date": "September 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 35,000"
+    },
+
+    {
+      "title": "Intro to Mobile App Development",
+      "description": "Learn how to build native mobile apps for Android and iOS using Java and Swift. Topics covered include design patterns, testing, and publishing to the app store.",
+      "location": "Surat, India",
+      "date": "October 1, 2023",
+      "time": "9:00 AM - 5:00 PM",
+      "price": "INR 40,000"
+    }
+  ]
+}

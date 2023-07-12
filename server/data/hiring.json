@@ -1,0 +1,114 @@
+{
+  "hiring": [
+    {
+      "name": "Google",
+      "position": "Software Engineer",
+      "location": "Bangalore, India",
+      "salary": "INR 6,000,000 - INR 7,200,000",
+      "application_deadline": "January 31, 2023",
+      "required_qualifications_1": "Bachelor's degree in Computer Science or related field",
+      "required_qualifications_2" : "3+ years of professional software development experience",
+      "required_qualifications_3" : "Proficiency in Java and Python",
+      "required_qualifications_4" : "Experience with agile development methodologies"
+    },
+    {
+      "name": "Microsoft",
+      "position": "Product Manager",
+      "location": "Mumbai, India",
+      "salary": "INR 3,500,000 - INR 4,500,000",
+      "application_deadline": "March 15, 2023",
+      "required_qualifications_1": "Bachelor's degree in Business Administration or related field",
+      "required_qualifications_2" :  "2+ years of product management experience",
+      "required_qualifications_3" :  "Experience with data analysis and product metrics",
+      "required_qualifications_4" :  "Excellent communication and leadership skills"
+    },
+    {
+      "name": "Samsung",
+      "position": "Financial Analyst",
+      "location": "Hyderabad, India",
+      "salary": "INR 4,500,000 - INR 5,500,000",
+      "application_deadline": "May 1, 2023",
+      "required_qualifications_1":  "Bachelor's degree in Finance or related field",
+      "required_qualifications_2" :  "2+ years of financial analysis experience",
+      "required_qualifications_3" :  "Experience with financial modeling and data analysis",
+      "required_qualifications_4" :  "Strong problem-solving and communication skills"
+    },
+    {
+      "name": "Google",
+      "position": "Human Resources Manager",
+      "location": "Chennai, India",
+      "salary": "INR 6,500,000 - INR 7,500,000",
+      "application_deadline": "June 1, 2023",
+      "required_qualifications_1": "Bachelor's degree in Human Resources or related field",
+      "required_qualifications_2" :  "3+ years of HR management experience",
+      "required_qualifications_3" :  "Experience with employee onboarding and training",
+      "required_qualifications_4" :  "Strong communication and conflict resolution skills"
+    },
+    {
+      "name": "Google",
+      "position": "Graphic Designer",
+      "location": "Pune, India",
+      "salary": "INR 2,500,000 - INR 3,000,000",
+      "application_deadline": "July 1, 2023",
+      "required_qualifications_1":  "Bachelor's degree in Graphic Design or related field",
+      "required_qualifications_2" :  "2+ years of professional design experience",
+      "required_qualifications_3" :  "Proficiency in Adobe Creative Suite",
+      "required_qualifications_4" :  "Strong portfolio showcasing design skills"
+    },
+    {
+      "name": "Airbnb",
+      "position": "Technical Writer",
+      "location": "Kolkata, India",
+      "salary": "INR 3,000,000 - INR 3,500,000",
+      "application_deadline": "August 1, 2023",
+      "required_qualifications_1":  "Bachelor's degree in Technical Writing or related field",
+      "required_qualifications_2" :  "2+ years of technical writing experience",
+      "required_qualifications_3" :  "Experience with technical documentation software such as MadCap Flare",
+      "required_qualifications_4" :  "Excellent writing and communication skills"
+    },
+    {
+      "name": "Amazon",
+      "position": "Blockchain Developer",
+      "location": "Hyderabad, India",
+      "salary": "INR 5,000,000 - INR 6,000,000",
+      "application_deadline": "March 1, 2023",
+      "required_qualifications_1":   "Bachelor's degree in Computer Science or related field",
+      "required_qualifications_2" :  "3+ years of professional blockchain development experience",
+      "required_qualifications_3" :  "Proficiency in at least one blockchain platform such as Ethereum or Hyperledger",
+      "required_qualifications_4" :  "Experience with smart contract development"
+    },
+    {
+      "name": "Amazon",
+      "position": "Data Scientist",
+      "location": "Mumbai, India",
+      "salary": "INR 6,000,000 - INR 7,000,000",
+      "application_deadline": "January 1, 2023",
+      "required_qualifications_1": "Bachelor's degree in Data Science or related field",
+      "required_qualifications_2" :  "3+ years of professional data science experience",
+      "required_qualifications_3" :  "Proficiency in Python and machine learning libraries such as scikit-learn and TensorFlow",
+      "required_qualifications_4" :  "Experience with data visualization tools such as Matplotlib and Seaborn"
+    },
+    {
+      "name": "Tower Research",
+      "position": "Cybersecurity Specialist",
+      "location": "Delhi, India",
+      "salary": "INR 4,000,000 - INR 5,000,000",
+      "application_deadline": "February 1, 2023",
+      "required_qualifications_1": "Bachelor's degree in Computer Science or related field",
+      "required_qualifications_2" :  "3+ years of cybersecurity experience",
+      "required_qualifications_3" :  "Certifications such as CISSP or CISM",
+      "required_qualifications_4" :  "Experience with security protocols and technologies"
+    },
+    {
+      "name": "Salesforce",
+      "position": "Machine Learning Engineer",
+      "location": "Bengaluru, India",
+      "salary": "INR 5,000,000 - INR 6,000,000",
+      "application_deadline": "December 1, 2023",
+      "required_qualifications_1":  "Bachelor's degree in Computer Science or related field",
+      "required_qualifications_2" :  "3+ years of professional machine learning experience",
+      "required_qualifications_3" :  "Proficiency in Python and machine learning libraries such as scikit-learn and TensorFlow",
+      "required_qualifications_4" :  "Experience with neural networks and deep learning"
+    }
+  ]
+}
