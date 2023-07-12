@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+  
+body {
+    background-color: #fff;
+}
+.register {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 2rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register h1 {
+    background: linear-gradient(to right, var(--main-dark-color), var(--main-light-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.4rem;
+
+}
+.form_container {
+    /* background-color: red; */
+    border: 1px solid rgb(191, 191, 191);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    justify-content: flex-start;
+    text-align: left;
+    text-align: left;
+    width: 500px;
+}
+.register-name {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.main_form input{
+    margin-bottom: 1rem;
+}
+.main_form input:focus {
+    border: 1px solid var(--main-light-color);
+}
+form input, form textarea, form select {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(191, 191, 191);
+    color: rgb(116, 116, 116);
+    font-size: 0.9rem;
+    width: 100%;
+}
+button {
+    border: none;
+    outline: none;
+    margin-top: 1rem ;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--main-light-color);
+    color: #fff;
+}
+.desc {
+    display: flex;
+    align-items: center;
+    color: rgb(116, 116, 116);
+    font-size: 0.8rem;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0;
+}
+.desc .link {
+    padding: 0;
+    padding-left: 2rem;
+}
+.desc .link p:hover {
+    color: rgb(116, 116, 116);
+    text-decoration: underline;
+    
+}
+.register-social {
+    display: flex;
+    flex-direction: column;
+}
+.register-social input {
+    width: 50%;
+}
+.register-social-upper {
+    display: flex;
+    gap: 1rem;
+}
+
+select#membership, select option {
+    cursor: pointer;
+}
+
+
