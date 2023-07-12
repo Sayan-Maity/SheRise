@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    /* overflow: hidden; */
+}
+/* =============  Scrollbar  ============= */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(157, 157, 157);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #78d7c3;
+}
+
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+
+.dashboard {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.maindashboard {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0;
+    border-radius: 10px;
+    gap: 1rem;
+    /* background-color: red; */
+
+}
+.dashboard-welcome-div {
+    /* background-color: var(--main-opacity-color); */
+    background: linear-gradient(to right, var(--main-opacity-color), #ffb9d1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-between;
+}
+.dashboard-welcome-div .left-desc {
+    position: relative;
+    width: 25em;
+    /* overflow: hidden; */
+    
+}
+.dashboard-welcome-div .left-desc p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--main-dark-color);
+}
+.dashboard-welcome-div .left-desc p:nth-child(2) span{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.dashboard-welcome-div .left-desc p:nth-child(2) ,
+.dashboard-welcome-div .left-desc p:nth-child(3) {
+    font-size: 0.9rem;
+    color: #333;
+}
+.dashboard-welcome-div .right-image {
+    /* position: absolute; */
+    /* padding: 10rem; */
+}
+.hagu {
+    height: 12rem;
+    transform: translateY(-4.5rem);
+}
+
+.gggg {
+    background-color: var(--main-opacity-color);
+    height: 3rem;
+    width: 3rem;
+    padding:1.8rem;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-1rem, -6.7rem);
+}
+
+
+
+.dashboard-column {
+    width: 70%;
+}
+.dashboard-profile-section {
+    /* width: 30%; */
+    display: flex;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+.dashboard-username {
+    text-transform: capitalize;
+}
