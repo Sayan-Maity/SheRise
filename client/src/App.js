@@ -16,6 +16,8 @@ import Success from "./pages/scholarship/donation/Success";
 import Cancel from "./pages/scholarship/donation/Cancel";
 import "@stripe/stripe-js"
 import Loader from "./components/Loader/Loader";
+import { hotjar } from "react-hotjar";
+
 // import LandingPage from "./pages/landingPage/LandingPage";
 // import Developers from "./pages/developers/Developers";
 // import Dashboard from "./pages/dashBoard/Dashboard";
@@ -62,6 +64,10 @@ const App = () => {
     };
     init();
   }, []);
+
+  useEffect(() => {
+    hotjar.initialize(process.env.REACT_APP_HOTJAR_SITEID , process.env.REACT_APP_HOTJAR_VERSION);
+  });
 
   return (
     <UserContext.Provider value={[user, setUser]}>
