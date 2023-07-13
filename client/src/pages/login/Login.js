@@ -26,8 +26,6 @@ const Login = () => {
 
   console.log(process.env.REACT_APP_SERVER_URL);
   const handleLogin = async () => {
-    const magic = new Magic("pk_live_8BB19E59588F1CA0");
-    const auth = new AuthExtension(magic);
     console.log(process.env.REACT_APP_SERVER_URL);
     setLoading(true);
     if (email === "") {
@@ -55,10 +53,7 @@ const Login = () => {
           return navigate("/register");
         }
         // Trigger Magic link to be sent to user
-        // let didToken = await magic.auth.loginWithMagicLink({
-        //   email,
-        // });
-        let didToken = await auth.loginWithMagicLink({
+        let didToken = await magic.auth.loginWithMagicLink({
           email,
         });
 
