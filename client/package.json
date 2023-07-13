@@ -17,6 +17,7 @@
     "react-chat-engine": "^1.11.28",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
     "react-hot-toast": "^2.4.1",
     "react-hotjar": "^6.1.0",
     "react-icons": "^4.10.1",
