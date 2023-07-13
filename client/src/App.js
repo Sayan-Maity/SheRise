@@ -17,7 +17,7 @@ import Cancel from "./pages/scholarship/donation/Cancel";
 import "@stripe/stripe-js"
 import Loader from "./components/Loader/Loader";
 import { hotjar } from "react-hotjar";
-import ReactGA from "react-ga4";
+// import ReactGA from "react-ga4";
 
 // import LandingPage from "./pages/landingPage/LandingPage";
 // import Developers from "./pages/developers/Developers";
@@ -68,10 +68,10 @@ const App = () => {
 
 
   // Google Analytics Integration :
-  ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  })
+  // ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
+  // useEffect(() => {
+    // ReactGA.pageview(window.location.pathname + window.location.search);
+  // })
   // HotJar Integration :
   useEffect(() => {
     hotjar.initialize(process.env.REACT_APP_HOTJAR_SITEID , process.env.REACT_APP_HOTJAR_VERSION);
