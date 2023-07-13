@@ -17,7 +17,7 @@ import Cancel from "./pages/scholarship/donation/Cancel";
 import "@stripe/stripe-js"
 import Loader from "./components/Loader/Loader";
 import { hotjar } from "react-hotjar";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 // import LandingPage from "./pages/landingPage/LandingPage";
 // import Developers from "./pages/developers/Developers";
