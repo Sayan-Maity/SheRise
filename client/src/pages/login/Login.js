@@ -3,15 +3,11 @@ import "./Login.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
 import Register from "../register/Register";
-
 import Axios from "axios";
 import { magic } from "../../utils/magic";
 import { UserContext } from "../../utils/userContext";
 import Cookies from "js-cookie";
-
 import toast from "react-hot-toast";
-import { AuthExtension } from '@magic-ext/auth';
-import { Magic } from 'magic-sdk';
 
 const Login = () => {
   const navigate = useNavigate();
