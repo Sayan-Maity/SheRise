@@ -65,6 +65,8 @@ const App = () => {
     init();
   }, []);
 
+
+  // HotJar Integration :
   useEffect(() => {
     hotjar.initialize(process.env.REACT_APP_HOTJAR_SITEID , process.env.REACT_APP_HOTJAR_VERSION);
   });
