@@ -6,9 +6,9 @@ import './Developers.css'
 import ReactGA from 'react-ga4'
 
 const Developers = () => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  })
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // })
   return (
     <>
       <div className='developers'>

@@ -16,6 +16,7 @@ import Axios from "axios";
 import { UserContext } from '../../utils/userContext';
 import Scholarship from "../../pages/scholarship/Scholarship";
 import Dashboard from "../../pages/dashBoard/Dashboard";
+import ReactGA from "react-ga4";
 
 const Navbar = () => {
     const navRef = useRef();
@@ -45,6 +46,7 @@ const Navbar = () => {
     // console.log(magic.user.isLoggedIn())
 
 	const showNavbar = () => {
+    ReactGA.event({'category': 'Navbar', 'action': 'Navbar Clicked'})
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
