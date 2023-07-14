@@ -69,7 +69,11 @@ const App = () => {
 
   // Google Analytics Integration :
   ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID);
-  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Custom Title" });
+    }
+  }, []);
   // HotJar Integration :
   useEffect(() => {
     hotjar.initialize(process.env.REACT_APP_HOTJAR_SITEID , process.env.REACT_APP_HOTJAR_VERSION);
