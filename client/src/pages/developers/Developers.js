@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import '../../components/sidebar/Sidebar.css'
 import './Developers.css'
+import ReactGA from 'react-ga4'
 
 const Developers = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <>
       <div className='developers'>
