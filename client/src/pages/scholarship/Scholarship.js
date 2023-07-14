@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import Navbar from "../../components/navbar/Navbar";
 import './Scholarship.css'
 import DonateBanner from "../../assets/svg/Donation.svg";
 import { BsArrowRight } from "react-icons/bs";
 import Footer from "../../components/footer/Footer";
+import ReactGA from "react-ga4";
 
 let stripePromise;
 
@@ -45,6 +46,10 @@ const Scholarship = () => {
   };
 
   if (stripeError) alert(stripeError);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   return (
     <>
