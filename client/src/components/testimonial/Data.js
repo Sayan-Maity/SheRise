@@ -20,7 +20,7 @@ const people = [
     {
       id: 3,
       image:
-        "https://th.bing.com/th/id/R.8abc455dc6c32eff3206a1868176a3b6?rik=DLQwBmeFwHAvdQ&riu=http%3a%2f%2fwww.elliottandassociates.ca%2fwordpress%2fwp-content%2fuploads%2f2021%2f03%2fcircle-cropped-1-300x300.png&ehk=9Sj%2b77aMuYWTP7GCdL2fvr3A1YFn%2fRMCWS%2fHpUloyOU%3d&risl=&pid=ImgRaw&r=0",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfMVM9oDxuTVLaEL8sAyMfO6Ks1iGx-hdofjq2vYxeCd4s7D-IjX1-ZUQOFUrCOKaOmoo&usqp=CAU",
       name: "Olivia Johnson",
       title: "Student",
       quote:
@@ -29,7 +29,7 @@ const people = [
     {
       id: 4,
       image:
-        "https://th.bing.com/th/id/OIP.AYhvc0orqJ05mev_dfH1PQAAAA?pid=ImgDet&w=338&h=338&rs=1",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH-1O1vJrO7JES9PymGvX2EBW942VbepT8u_KIg9_D4zpyRobQ9O-JYvCy5HjBzfz5xQ&usqp=CAU",
       name: "Sophia Rodriguez",
       title: "UI/UX Intern",
       quote:
