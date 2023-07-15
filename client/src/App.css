@@ -3,3 +3,11 @@
     padding:0;
     text-decoration: none;
 }
+
+:root {
+    --main-light-color: #FF81AE;
+    --main-dark-color: #ff2e77;
+    --main-opacity-color: #ff81ad2d;
+    --main-font-size: 0.9rem;
+}
+  
