@@ -79,7 +79,7 @@ const Navbar = () => {
                   : "nav-main-links"
               }
             >
-              <p>Scholarship</p>
+              <p>SCHOLARSHIP</p>
             </NavLink>
           </li>
           <li className="nav-links">
@@ -92,7 +92,7 @@ const Navbar = () => {
                   : "nav-main-links"
               }
             >
-              <p>Developers</p>
+              <p>DEVELOPERS</p>
             </NavLink>
           </li>
           <li className="nav-links">
@@ -105,7 +105,7 @@ const Navbar = () => {
                   : "nav-main-links"
               }
             >
-              <p>Contact US</p>
+              <p>CONTACT US</p>
             </NavLink>
           </li>
           {Cookies.get("token") ? (
@@ -124,7 +124,7 @@ const Navbar = () => {
             <>
               <li className="nav-links">
                 <NavLink to="/login" key={<Login />} className="nav-main-links">
-                  <p>Login</p>
+                  <p>LOGIN</p>
                 </NavLink>
               </li>
               <li className="nav-links">
@@ -133,7 +133,7 @@ const Navbar = () => {
                   key={<Register />}
                   className="nav-main-links"
                 >
-                  <p>Register</p>
+                  <p>REGISTER</p>
                 </NavLink>
               </li>
             </>
