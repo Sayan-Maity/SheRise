@@ -145,7 +145,7 @@ const Register = () => {
               </div>
             </div>
             <textarea placeholder="Describe yourself (in 10-15 words)*" name="" id="" cols="30" rows="3"  onChange={(e) => setBio(e.target.value)} required></textarea>
-            <select name="membership" id="membership"  onChange={(e) => setProfession(e.target.value)} required>
+            <select title="profession" name="membership" id="membership"  onChange={(e) => setProfession(e.target.value)} required>
               <option value="student" selected>Student</option>
               <option value="frontend">Frontend Developer</option>
               <option value="backend" >Backend Developer</option>
