@@ -4,13 +4,6 @@
     margin: 0;
 }
 
-:root {
-    --main-light-color: #FF81AE;
-    --main-dark-color: #ff2e77;
-    --main-opacity-color: #ff81ad2d;
-    --main-font-size: 0.9rem;
-}
-  
 body {
     background-color: #fff;
 }
@@ -62,6 +55,9 @@ form input, form textarea, form select {
     color: rgb(116, 116, 116);
     font-size: 0.9rem;
     width: 100%;
+}
+form textarea {
+    resize: none;
 }
 button {
     border: none;
