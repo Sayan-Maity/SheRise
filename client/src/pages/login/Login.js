@@ -96,7 +96,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </form>
-          <button onClick={handleLogin}>Log In</button>
+          <button onClick={handleLogin}>{loading? "Please Wait" : "Log In"}</button>
           <div className="desc">
             <p>Not registered yet? </p>
             <p>
