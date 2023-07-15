@@ -13,7 +13,6 @@ import './Navbar.css'
 import LandingPage from '../../pages/landingPage/LandingPage';
 import Cookies from 'js-cookie';
 import Axios from "axios";
-import { UserContext } from '../../utils/userContext';
 import Scholarship from "../../pages/scholarship/Scholarship";
 import Dashboard from "../../pages/dashBoard/Dashboard";
 import ReactGA from "react-ga4";
@@ -21,7 +20,6 @@ import ReactGA from "react-ga4";
 const Navbar = () => {
     const navRef = useRef();
     const location = useLocation();
-    const [user, setUser] = useContext(UserContext)
     const [profile, setProfile] = useState({});
 
     useEffect(() => {
