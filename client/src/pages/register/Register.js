@@ -3,14 +3,12 @@ import "./Register.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
 import Login from "../login/Login";
-import { UserContext } from "../../utils/userContext";
 
 import Axios from "axios";
 import toast from "react-hot-toast";
 
 const Register = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useContext(UserContext);
 
   const [email, setEmail] = useState();
   const [firstname, setFirstName] = useState();
