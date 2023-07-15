@@ -158,7 +158,7 @@ const Register = () => {
             </select>
 
           </form>
-          <button onClick={handleRegistration}>Register</button>
+          <button onClick={handleRegistration}>{loading? "Please Wait" : "Register"}</button>
           <div className="desc">
             <p>Already have an account? </p>
             <NavLink to="/login" key={<Login />} className="link">
