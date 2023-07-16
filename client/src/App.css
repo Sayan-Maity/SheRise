@@ -10,4 +10,7 @@
     --main-opacity-color: #ff81ad2d;
     --main-font-size: 0.9rem;
 }
-  
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
