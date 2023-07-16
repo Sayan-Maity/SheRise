@@ -454,14 +454,7 @@ const LandingPage = () => {
 
       {/* =================================  FOOTER  =================================== */}
       <Footer />
-
-      {/* <p className="short-heading">
-          Girl, are you Missing the opportunities because of the lack of
-          awareness ?
-        </p>
-        <p className="main-heading">
-          Don't worry, she-works is the onestop platform
-        </p> */}
+      
     </>
   );
 };
