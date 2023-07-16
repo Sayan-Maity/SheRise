@@ -156,7 +156,7 @@ const LandingPage = () => {
             <div className="service-desc-1 service-common">
               <div className="image">
                 {/* <img src={service1} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service1.webp?updatedAt=1689492296241" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service1.webp?updatedAt=1689492296241" draggable="false" alt="AI Assistant" />
                 {/* <Image
                   src={require("/path/to/image.webp")}
                   fallback="/path/to/fallback-image.png"
@@ -177,7 +177,7 @@ const LandingPage = () => {
             <div className="service-desc-2 service-common">
               <div className="image">
                 {/* <img src={service2} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service2.svg?updatedAt=1689493101201" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service2.svg?updatedAt=1689493101201" draggable="false" alt="One-2-One Mentorship" />
               </div>
               <div className="heading">
                 <p>One-2-One Mentorship</p>
@@ -191,7 +191,7 @@ const LandingPage = () => {
             <div className="service-desc-3 service-common">
               <div className="image">
                 {/* <img src={service3} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service3.webp?updatedAt=1689493101686" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service3.webp?updatedAt=1689493101686" draggable="false" alt="5 Category Job Listing" />
               </div>
               <div className="heading">
                 <p>5 Category Job Listing</p>
@@ -205,7 +205,7 @@ const LandingPage = () => {
             <div className="service-desc-4 service-common">
               <div className="image">
                 {/* <img src={service4} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service4.webp?updatedAt=1689493101109" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service4.webp?updatedAt=1689493101109" draggable="false" alt="Bookmarking and Filtering Jobs" />
               </div>
               <div className="heading">
                 <p>Bookmarking and Filtering Jobs</p>
@@ -219,7 +219,7 @@ const LandingPage = () => {
             <div className="service-desc-5 service-common">
               <div className="image">
                 {/* <img src={service5} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service5.webp?updatedAt=1689493101582" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service5.webp?updatedAt=1689493101582" draggable="false" alt="Scholarship" />
               </div>
               <div className="heading">
                 <p>Scholarship</p>
@@ -233,7 +233,7 @@ const LandingPage = () => {
             <div className="service-desc-6 service-common">
               <div className="image">
                 {/* <img src={service6} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service6.webp?updatedAt=1689493101339" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service6.webp?updatedAt=1689493101339" draggable="false" alt="Passwordless Login" />
               </div>
               <div className="heading">
                 <p>Passwordless Login</p>
@@ -247,7 +247,7 @@ const LandingPage = () => {
             <div className="service-desc-7 service-common">
               <div className="image">
                 {/* <img src={service7} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service7.webp?updatedAt=1689493101242" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service7.webp?updatedAt=1689493101242" draggable="false" alt="Get Notified" />
               </div>
               <div className="heading">
                 <p>Get Notified</p>
@@ -261,7 +261,7 @@ const LandingPage = () => {
             <div className="service-desc-8 service-common">
               <div className="image">
                 {/* <img src={service8} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service8.webp?updatedAt=1689493101221" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/service8.webp?updatedAt=1689493101221" draggable="false" alt="24/7 Technical Support" />
               </div>
               <div className="heading">
                 <p>24/7 Technical Support</p>
