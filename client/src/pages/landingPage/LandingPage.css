@@ -1,22 +1,7 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-:root {
-    --main-light-color: #FF81AE;
-    --main-dark-color: #ff2e77;
-    --main-opacity-color: #ff81ad2d;
-    --main-font-size: 0.9rem;
-}
-
 
 body {
     background-color: #fff;
 }
-
 
 /*  ========================= ' LANDING SECTION ' starts here ====================  */
 .landingPage {
