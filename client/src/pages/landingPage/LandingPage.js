@@ -96,7 +96,8 @@ const LandingPage = () => {
               <div className="col1"></div>
               <div className="col2">
                 {" "}
-                <img src={Girl3} alt="" className="dddd" />
+                {/* <img src={Girl3} alt="" className="dddd" /> */}
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl13.jpg?updatedAt=1689504272833" alt="" className="dddd" />
                 <div className="col12-icon col-icon-common">
                   <FaFemale />
                 </div>
@@ -105,24 +106,25 @@ const LandingPage = () => {
             </div>
             <div className="col2">
               <div className="col1">
-                <img src={Girl2} alt="" />
+                {/* <img src={Girl2} alt="" /> */}
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl2.jpg?updatedAt=1689504273895" alt="" />
               </div>
               <div className="col2">
-                <img src={Girl5} alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl15.jpg?updatedAt=1689504269740" alt="" />
               </div>
               <div className="col3">
-                <img src={Girl4} alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl14.jpg?updatedAt=1689504273280" alt="" />
               </div>
             </div>
             <div className="col3">
               <div className="col1">
-                <img src={Girl} alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl11.jpeg?updatedAt=1689504268533" alt="" />
                 <div className="col31-icon col-icon-common">
                   <MdVerifiedUser />
                 </div>
               </div>
               <div className="col2">
-                <img src={Girl6} alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl16.jpg?updatedAt=1689504272980" alt="" />
                 <div className="col32-icon col-icon-common">
                   <FaSearch />
                 </div>
