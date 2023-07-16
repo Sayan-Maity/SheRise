@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Navbar from "../components/navbar/Navbar";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, NavLink } from "react-router-dom";
 
 // Helper function to render the Register component with MemoryRouter
 const renderRegister = () => {
@@ -12,13 +12,26 @@ const renderRegister = () => {
 };
 
 describe("Component Navbar Test", () => {
+  //   it("Home NavLink should be rendered with the correct text and destination", () => {
+  //     const onClick = jest.fn();
+  //     render(
+  //       <MemoryRouter>
+  //         <NavLink onClick={onClick} title="Add Item"/>
+  //       </MemoryRouter>
+  //     );
+
+  //     const buttonElement = screen.getByText("Add Item");
+  //     fireEvent.click(buttonElement);
+  //     expect(onClick).toHaveBeenCalledTimes(1);
+  //   });
+
   it("Home NavLink should be rendered with the correct text and destination", () => {
     renderRegister();
     const navLinkElement = screen.getByRole("link", { name: "HOME" });
     expect(navLinkElement.textContent).toBe("HOME");
     expect(navLinkElement.getAttribute("href")).toBe("/");
   });
-  
+
   it("Scholarship NavLink should be rendered with the correct text and destination", () => {
     renderRegister();
     const navLinkElement = screen.getByRole("link", { name: "SCHOLARSHIP" });
@@ -53,5 +66,4 @@ describe("Component Navbar Test", () => {
     expect(navLinkElement.textContent).toBe("REGISTER");
     expect(navLinkElement.getAttribute("href")).toBe("/register");
   });
-
 });
