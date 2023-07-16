@@ -97,7 +97,7 @@ const LandingPage = () => {
               <div className="col2">
                 {" "}
                 {/* <img src={Girl3} alt="" className="dddd" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl13.jpg?updatedAt=1689504272833" alt="" className="dddd" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl13.jpg?updatedAt=1689504272833" draggable="false" alt="girl1" className="dddd" />
                 <div className="col12-icon col-icon-common">
                   <FaFemale />
                 </div>
@@ -107,24 +107,24 @@ const LandingPage = () => {
             <div className="col2">
               <div className="col1">
                 {/* <img src={Girl2} alt="" /> */}
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl2.jpg?updatedAt=1689504273895" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl2.jpg?updatedAt=1689504273895" draggable="false" alt="girl2" />
               </div>
               <div className="col2">
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl15.jpg?updatedAt=1689504269740" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl15.jpg?updatedAt=1689504269740" draggable="false" alt="girl3" />
               </div>
               <div className="col3">
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl14.jpg?updatedAt=1689504273280" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl14.jpg?updatedAt=1689504273280" draggable="false" alt="girl4" />
               </div>
             </div>
             <div className="col3">
               <div className="col1">
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl11.jpeg?updatedAt=1689504268533" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl11.jpeg?updatedAt=1689504268533" draggable="false" alt="girl5" />
                 <div className="col31-icon col-icon-common">
                   <MdVerifiedUser />
                 </div>
               </div>
               <div className="col2">
-                <img src="https://ik.imagekit.io/sayancr777/SheRise/girl16.jpg?updatedAt=1689504272980" alt="" />
+                <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/girl16.jpg?updatedAt=1689504272980" draggable="false" alt="girl6" />
                 <div className="col32-icon col-icon-common">
                   <FaSearch />
                 </div>
