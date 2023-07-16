@@ -14,7 +14,6 @@ import SupportAdmin from "./pages/livechat/SupportAdmin";
 import Livechat from "./pages/livechat/Livechat";
 import Success from "./pages/scholarship/donation/Success";
 import Cancel from "./pages/scholarship/donation/Cancel";
-import "@stripe/stripe-js"
 import Loader from "./components/Loader/Loader";
 import { hotjar } from "react-hotjar";
 import ReactGA from "react-ga4";
