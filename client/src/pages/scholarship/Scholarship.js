@@ -22,7 +22,7 @@ const Scholarship = () => {
   const [stripeError, setStripeError] = useState(null);
   const [isLoading, setLoading] = useState(false);
   const item = {
-    price: "price_1MQ4rVSC9OuZw3mDsaBxOYpn",
+    price: process.env.REACT_APP_PRODUCT_ID,
     quantity: 1
   };
 
