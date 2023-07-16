@@ -376,7 +376,8 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="right">
-            <img src={whysherise} alt="" />
+            {/* <img src={whysherise} alt="" /> */}
+            <img src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/whysherise.svg?updatedAt=1689503441644" alt="" />
             <img src="" alt="" />
           </div>
         </div>
@@ -454,7 +455,7 @@ const LandingPage = () => {
 
       {/* =================================  FOOTER  =================================== */}
       <Footer />
-      
+
     </>
   );
 };
