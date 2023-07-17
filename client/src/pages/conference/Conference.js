@@ -5,6 +5,7 @@ import "./Conference.css";
 import ConferenceCard from "../../components/cards/conferencecard/ConferenceCard";
 import ConferenceBanner from "../../assets/svg/type3.svg"
 import ConferenceBanner2 from "../../assets/svg/conferenceBanner.svg"
+import { Helmet } from "react-helmet";
 
 const Conference = () => {
   const [conferences, setConferences] = useState([]);
@@ -35,6 +36,17 @@ const Conference = () => {
   <>
 
     <div className="conference">
+    <Helmet>
+          <title>SheRise | Login</title>
+          <meta
+            name="description"
+            content="SheRise's Login Page. Login to your account and get access to all the features. "
+          />
+          <meta
+            name="keywords"
+            content="Login, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
       <div className="conference-banner-section">
         <div className="left">
           <div className="left-image"><img src={ConferenceBanner2} alt={ConferenceBanner2} className="conference-banner-image" /></div>
