@@ -4,7 +4,7 @@ import "./HiringChallange.css";
 import HiringCard from "../../components/cards/hiringcard/HiringCard";
 import HiringBanner from "../../assets/svg/type3.svg"
 import HiringBanner2 from "../../assets/svg/hiringBanner.svg"
-
+import { Helmet } from "react-helmet";
 const HiringChallange = () => {
   const [hirings, setHirings] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -35,6 +35,17 @@ const HiringChallange = () => {
     <>
 
       <div className="hiring">
+      <Helmet>
+          <title>SheRise | Hiring</title>
+          <meta
+            name="description"
+            content="SheRise's Hiring Page. Here all the job listing related to the Hiring tags are dynamically listed down here. "
+          />
+          <meta
+            name="keywords"
+            content="Hiring, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <div className="hiring-banner-section">
           <div className="left">
             <div className="left-image"><img src={HiringBanner2} alt={HiringBanner2} className="hiring-banner-image" /></div>
