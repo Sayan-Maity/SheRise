@@ -5,7 +5,7 @@ import Axios from "axios";
 import Cookies from "js-cookie";
 import ProfileCard from "../../components/profilecard/ProfileCard";
 import BookmarkSection from "../../components/bookmarksection/BookmarkSection";
-import xxxxx from "../../assets/png/dashboardAvatar.png"
+import xxxxx from "../../assets/png/dashboardAvatar.png";
 import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
@@ -13,17 +13,17 @@ const Dashboard = () => {
   const [profile, setProfile] = useState({});
 
   // Get time and Greet :
-  const Greetings =() => {
+  const Greetings = () => {
     let myDate = new Date();
     let hours = myDate.getHours();
     let greet;
 
-    if(hours >= 5 && hours < 12) greet = "Morning";
-    else if(hours >= 12 && hours <= 17) greet = "Afternoon";
-    else if((hours > 17 && hours <= 24) || ( hours < 5) ) greet = "Evening";
+    if (hours >= 5 && hours < 12) greet = "Morning";
+    else if (hours >= 12 && hours <= 17) greet = "Afternoon";
+    else if ((hours > 17 && hours <= 24) || hours < 5) greet = "Evening";
 
-    return <span>Good {greet}</span>
-  }
+    return <span>Good {greet}</span>;
+  };
 
   useEffect(() => {
     async function call() {
@@ -48,7 +48,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="dashboard">
-      <Helmet>
+        <Helmet>
           <title>SheRise | Dashboard</title>
           <meta
             name="description"
@@ -61,31 +61,41 @@ const Dashboard = () => {
         </Helmet>
         <div className="maindashboard">
           <div className="dashboard-column">
-
-          {/* ========= Greeting Section ========= */}
+            {/* ========= Greeting Section ========= */}
             <div className="dashboard-welcome-div">
               <div className="left-desc">
-                <p> <Greetings />, <span className="dashboard-username"> {profile.firstname}</span>!</p>
-                <p>Welcome back to your <span>Dashboard</span> </p>
-                <p>Explore all the opportunities section to keep yourself updated with the current job market.</p>
-              <div className="gggg"></div>
+                <p>
+                  {" "}
+                  <Greetings />,{" "}
+                  <span className="dashboard-username">
+                    {" "}
+                    {profile.firstname}
+                  </span>
+                  !
+                </p>
+                <p>
+                  Welcome back to your <span>Dashboard</span>{" "}
+                </p>
+                <p>
+                  Explore all the opportunities section to keep yourself updated
+                  with the current job market.
+                </p>
+                <div className="gggg"></div>
               </div>
               <div className="right-image">
-                <img src={xxxxx} alt="" className="hagu"/>
+                <img src={xxxxx} alt="" className="hagu" />
               </div>
             </div>
-            
-          {/* ========= Bookmark Section ========= */}
+
+            {/* ========= Bookmark Section ========= */}
             <div className="dashboard-bookmark-section">
               <BookmarkSection bookmarks={profile.bookmarks} />
             </div>
-
           </div>
           {/* ========= Profile Card ========= */}
           <div className="dashboard-profile-section">
             <ProfileCard profile={profile} />
           </div>
-
         </div>
       </div>
     </>
