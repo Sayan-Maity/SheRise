@@ -87,14 +87,14 @@ const Login = () => {
     <>
       <div className="login">
         <Helmet>
-          <title>SheRise | Login</title>
+          <title>SheRise | Register</title>
           <meta
             name="description"
-            content="SheRise's Login Page. Login to your account and get access to all the features. "
+            content="SheRise's Register Page. Register to your account and get access to all the features. "
           />
           <meta
             name="keywords"
-            content="Login, Career, Tech, Opportunities, Job Listings"
+            content="Register, Career, Tech, Opportunities, Job Listings"
           />
         </Helmet>
         <h1>Login</h1>
