@@ -37,14 +37,14 @@ const Conference = () => {
 
     <div className="conference">
     <Helmet>
-          <title>SheRise | Login</title>
+          <title>SheRise | Conferences</title>
           <meta
             name="description"
-            content="SheRise's Login Page. Login to your account and get access to all the features. "
+            content="SheRise's Conference Page. Here all the job listing related to the conference tags are dynamically listed down here. "
           />
           <meta
             name="keywords"
-            content="Login, Career, Tech, Opportunities, Job Listings"
+            content="Conference, Career, Tech, Opportunities, Job Listings"
           />
         </Helmet>
       <div className="conference-banner-section">
