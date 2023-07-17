@@ -56,7 +56,7 @@ const Dashboard = () => {
           />
           <meta
             name="keywords"
-            content="Register, Career, Tech, Opportunities, Job Listings"
+            content="Dashboard, User's Personal Info, User's space, Career, Tech, Opportunities, Job Listings"
           />
         </Helmet>
         <div className="maindashboard">
