@@ -6,6 +6,7 @@ import Login from "../login/Login";
 
 import Axios from "axios";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -26,7 +27,19 @@ const Register = () => {
 
   const handleRegistration = async () => {
     setLoading(true);
-    if (!email || !firstname || !lastname || !university || !stream || !year || !github || !linkedin || !profession || !country || !bio) {
+    if (
+      !email ||
+      !firstname ||
+      !lastname ||
+      !university ||
+      !stream ||
+      !year ||
+      !github ||
+      !linkedin ||
+      !profession ||
+      !country ||
+      !bio
+    ) {
       toast.error("Please fill all the fields");
       setLoading(false);
     } else {
@@ -80,6 +93,17 @@ const Register = () => {
   return (
     <>
       <div className="register">
+        <Helmet>
+          <title>SheRise | Register</title>
+          <meta
+            name="description"
+            content="SheRise's Register Page. Register to your account and get access to all the features. "
+          />
+          <meta
+            name="keywords"
+            content="Register, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <h1>Register</h1>
 
         <div className="form_container">
@@ -144,19 +168,36 @@ const Register = () => {
                 />
               </div>
             </div>
-            <textarea placeholder="Describe yourself (in 10-15 words)*" name="" id="" cols="30" rows="3"  onChange={(e) => setBio(e.target.value)} required></textarea>
-            <select title="profession" name="membership" id="membership"  onChange={(e) => setProfession(e.target.value)} required>
-              <option value="student" selected>Student</option>
+            <textarea
+              placeholder="Describe yourself (in 10-15 words)*"
+              name=""
+              id=""
+              cols="30"
+              rows="3"
+              onChange={(e) => setBio(e.target.value)}
+              required
+            ></textarea>
+            <select
+              title="profession"
+              name="membership"
+              id="membership"
+              onChange={(e) => setProfession(e.target.value)}
+              required
+            >
+              <option value="student" selected>
+                Student
+              </option>
               <option value="frontend">Frontend Developer</option>
-              <option value="backend" >Backend Developer</option>
+              <option value="backend">Backend Developer</option>
               <option value="fullstack">Full-Stack Developer</option>
               <option value="designer">UI/UX Designer</option>
               <option value="influencer">Influencer</option>
               <option value="content">Content Writer</option>
             </select>
-
           </form>
-          <button onClick={handleRegistration}>{loading? "Please Wait" : "Register"}</button>
+          <button onClick={handleRegistration}>
+            {loading ? "Please Wait" : "Register"}
+          </button>
           <div className="desc">
             <p>Already have an account? </p>
             <NavLink to="/login" key={<Login />} className="link">
