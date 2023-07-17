@@ -8,6 +8,7 @@ import { magic } from "../../utils/magic";
 import { UserContext } from "../../utils/userContext";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -85,6 +86,17 @@ const Login = () => {
   return (
     <>
       <div className="login">
+        <Helmet>
+          <title>SheRise | Login</title>
+          <meta
+            name="description"
+            content="SheRise's Login Page. Login to your account and get access to all the features. "
+          />
+          <meta
+            name="keywords"
+            content="Login, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <h1>Login</h1>
 
         <div className="form_container">
@@ -96,7 +108,9 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </form>
-          <button onClick={handleLogin}>{loading? "Please Wait" : "Log In"}</button>
+          <button onClick={handleLogin}>
+            {loading ? "Please Wait" : "Log In"}
+          </button>
           <div className="desc">
             <p>Not registered yet? </p>
             <p>
