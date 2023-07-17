@@ -6,6 +6,7 @@ import Cookies from "js-cookie";
 import ProfileCard from "../../components/profilecard/ProfileCard";
 import BookmarkSection from "../../components/bookmarksection/BookmarkSection";
 import xxxxx from "../../assets/png/dashboardAvatar.png"
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   const [user, setUser] = useContext(UserContext);
@@ -47,6 +48,17 @@ const Dashboard = () => {
   return (
     <>
       <div className="dashboard">
+      <Helmet>
+          <title>SheRise | Dashboard</title>
+          <meta
+            name="description"
+            content="SheRise's User dashboard. All the user related information got during the registration is displayed here. "
+          />
+          <meta
+            name="keywords"
+            content="Register, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <div className="maindashboard">
           <div className="dashboard-column">
 
