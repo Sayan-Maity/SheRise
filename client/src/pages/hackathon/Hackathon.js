@@ -5,6 +5,7 @@ import { SiPluscodes } from 'react-icons/si';
 import HackathonBanner from "../../assets/svg/type3.svg"
 import HackathonBanner2 from "../../assets/svg/hackathonBanner3.svg"
 import HackathonCard from '../../components/cards/hackathoncard/HackathonCard';
+import { Helmet } from 'react-helmet';
 
 const Hackathon = () => {
   const [hackathons, setHackathons] = useState([]);
@@ -32,6 +33,17 @@ const Hackathon = () => {
 
   return (
     <div className="hackathon">
+      <Helmet>
+          <title>SheRise | Hackathons</title>
+          <meta
+            name="description"
+            content="SheRise's Hackathon Page. Here all the job listing related to the Hackathon tags are dynamically listed down here. "
+          />
+          <meta
+            name="keywords"
+            content="Hackathon, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
       <div className="hackathon-banner-section">
         <div className="left">
           <div className="left-image"><img src={HackathonBanner2} alt={HackathonBanner2} className="hackathon-banner-image" /></div>
