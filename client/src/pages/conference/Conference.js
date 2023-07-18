@@ -6,6 +6,7 @@ import ConferenceCard from "../../components/cards/conferencecard/ConferenceCard
 import ConferenceBanner from "../../assets/svg/type3.svg";
 import ConferenceBanner2 from "../../assets/svg/conferenceBanner.svg";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Conference = () => {
   const [conferences, setConferences] = useState([]);
@@ -37,17 +38,21 @@ const Conference = () => {
   return (
     <>
       <div className="conference">
-        <Helmet>
-          <title>SheRise | Conferences</title>
-          <meta
-            name="description"
-            content="SheRise's Conference Page. Here all the job listing related to the conference tags are dynamically listed down here. "
-          />
-          <meta
-            name="keywords"
-            content="Conference, Career, Tech, Opportunities, Job Listings"
-          />
-        </Helmet>
+      <Helmet>
+        <title>{DynamicTitleHelmet.ConferencePageTitle}</title>
+        <meta name="description" content={CommonPageHelmet.description} />
+        <meta name="keywords" content={CommonPageHelmet.keywords} />
+        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
+        <meta
+          property="og:description"
+          content={CommonPageHelmet.ogDescription}
+        />
+        <meta property="og:image" content={CommonPageHelmet.ogImage} />
+        <meta property="og:url" content={CommonPageHelmet.ogURL} />
+        <meta property="og:type" content={CommonPageHelmet.ogType} />
+        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
+      </Helmet>
         <div className="conference-banner-section">
           <div className="left">
             <div className="left-image">
