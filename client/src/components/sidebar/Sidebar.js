@@ -29,7 +29,7 @@ import Cookies from "js-cookie";
 import { magic } from "../../utils/magic";
 import Axios from "axios";
 import toast from "react-hot-toast";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/dashboardLogo.svg"
 import Assistant from "../../pages/assistant/Assistant";
 import Livechat from "../../pages/livechat/Livechat";
 
