@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/sidebar/Sidebar";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
-import Main from "./pages/main/Main";
 import { UserContext } from "./utils/userContext";
 import { magic } from "./utils/magic";
 import Cookies from "js-cookie";
