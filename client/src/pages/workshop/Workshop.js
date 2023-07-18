@@ -6,6 +6,7 @@ import "./Workshop.css";
 import WorkshopCard from "../../components/cards/workshopcard/WorkshopCard";
 import WorkshopBanner from "../../assets/svg/type3.svg"
 import WorkshopBanner2 from "../../assets/svg/workshopBanner2.svg"
+import { Helmet } from "react-helmet";
 
 const Workshop = () => {
   const [workshops, setWorkshops] = useState([]);
@@ -36,6 +37,17 @@ const Workshop = () => {
   return (
     <>
             <div className="workshop">
+            <Helmet>
+          <title>SheRise | Workshops</title>
+          <meta
+            name="description"
+            content="SheRise's Workshop Page. Here all the job listing related to the Workshop tags are dynamically listed down here. "
+          />
+          <meta
+            name="keywords"
+            content="Workshop, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <div className="workshop-banner-section">
           <div className="left">
             <div className="left-image"><img src={WorkshopBanner2} alt={WorkshopBanner2} className="workshop-banner-image" /></div>
