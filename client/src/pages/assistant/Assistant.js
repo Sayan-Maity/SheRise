@@ -6,6 +6,7 @@ import { useState } from "react";
 import "./Assistant.css";
 import { Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 function App() {
   const configuration = new Configuration({
@@ -31,16 +32,20 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>SheRise | AI Assistant</title>
-        <meta
-          name="description"
-          content="SheRise provides user with AI Assistant to help them with their career.  "
-        />
-        <meta
-          name="keywords"
-          content="AI Assistant, Help, Support, Career, Tech, Opportunities, Job Listings"
-        />
-      </Helmet>
+          <title>{DynamicTitleHelmet.AssistantPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
+          <meta
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
+          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
+        </Helmet>
       {Object.values(option).length === 0 ? (
         <OptionSelection arrayItems={arrayItems} selectOption={selectOption} />
       ) : (
