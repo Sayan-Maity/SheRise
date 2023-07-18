@@ -3,7 +3,7 @@ import OptionSelection from "./assistantfiles/OptionSelction";
 import Translation from "./assistantfiles/Translation";
 import { arrayItems } from "./assistantfiles/AIOptions.js";
 import { useState } from "react";
-import './Assistant.css'
+import "./Assistant.css";
 import { Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -15,7 +15,7 @@ function App() {
   const [option, setOption] = useState({});
   const [result, setResult] = useState("");
   const [input, setInput] = useState("");
-  
+
   const selectOption = (option) => {
     setOption(option);
   };
@@ -31,21 +31,20 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-          <title>SheRise | AI Assistant</title>
-          <meta
-            name="description"
-            content="SheRise provides user with AI Assistant to help them with their career.  "
-          />
-          <meta
-            name="keywords"
-            content="AI Assistant, Help, Support, Career, Tech, Opportunities, Job Listings"
-          />
-        </Helmet>
+        <title>SheRise | AI Assistant</title>
+        <meta
+          name="description"
+          content="SheRise provides user with AI Assistant to help them with their career.  "
+        />
+        <meta
+          name="keywords"
+          content="AI Assistant, Help, Support, Career, Tech, Opportunities, Job Listings"
+        />
+      </Helmet>
       {Object.values(option).length === 0 ? (
         <OptionSelection arrayItems={arrayItems} selectOption={selectOption} />
       ) : (
         <Translation doStuff={doStuff} setInput={setInput} result={result} />
-        
       )}
     </div>
   );
