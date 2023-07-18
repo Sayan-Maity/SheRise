@@ -11,21 +11,26 @@ import { HiOutlineChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
 
 import "./Livechat.css";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Livechat = () => {
   return (
     <>
       <div className="livechat">
         <Helmet>
-          <title>SheRise | Mentor</title>
+          <title>{DynamicTitleHelmet.MentorPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
           <meta
-            name="description"
-            content="SheRise provides user with Personalized Mentor to help them with their career and do live one-on-one chat in real time.  "
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
           />
-          <meta
-            name="keywords"
-            content="Personalized Mentor, Help, Support, Career, Tech, Opportunities, Job Listings"
-          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
         </Helmet>
         <div className="livechat-inner">
           <div className="mentor-group">
