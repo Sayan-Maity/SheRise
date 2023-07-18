@@ -5,6 +5,7 @@ import { CiBadgeDollar } from "react-icons/ci";
 import InternshipCard from "../../components/cards/internship/InternshipCard";
 import InternshipBanner from "../../assets/svg/type3.svg"
 import InternshipBanner2 from "../../assets/svg/internBanner.svg"
+import {Helmet} from "react-helmet";
 
 const Internship = () => {
   const [internships, setInternships] = useState([]);
@@ -37,6 +38,17 @@ const Internship = () => {
   return (
     <>
       <div className="internship">
+      <Helmet >
+          <title>SheRise | Internships</title>
+          <meta
+            name="description"
+            content="SheRise's Internship Page. Here all the job listing related to the Internship tags are dynamically listed down here. "
+          />
+          <meta
+            name="keywords"
+            content="Internship, Career, Tech, Opportunities, Job Listings"
+          />
+        </Helmet>
         <div className="internship-banner-section">
           <div className="left">
             <div className="left-image"><img src={InternshipBanner2} alt={InternshipBanner2} className="internship-banner-image" /></div>
