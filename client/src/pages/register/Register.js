@@ -7,6 +7,7 @@ import Login from "../login/Login";
 import Axios from "axios";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -93,16 +94,20 @@ const Register = () => {
   return (
     <>
       <div className="register">
-        <Helmet>
-          <title>SheRise | Register</title>
+      <Helmet>
+          <title>{DynamicTitleHelmet.RegisterPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
           <meta
-            name="description"
-            content="SheRise's Register Page. Register to your account and get access to all the features. "
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
           />
-          <meta
-            name="keywords"
-            content="Register, Career, Tech, Opportunities, Job Listings"
-          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
         </Helmet>
         <h1>Register</h1>
 
