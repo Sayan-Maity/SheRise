@@ -7,6 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Footer from "../../components/footer/Footer";
 import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 let stripePromise;
 
@@ -52,15 +53,19 @@ const Scholarship = () => {
     <>
       <Navbar />
       <Helmet>
-        <title>SheRise | Scholarship</title>
+        <title>{DynamicTitleHelmet.ScholarshipPageTitle}</title>
+        <meta name="description" content={CommonPageHelmet.description} />
+        <meta name="keywords" content={CommonPageHelmet.keywords} />
+        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
         <meta
-          name="description"
-          content="SheRise provides Scholarship to under privileged girls and also we are raising funds for the same."
+          property="og:description"
+          content={CommonPageHelmet.ogDescription}
         />
-        <meta
-          name="keywords"
-          content="Fund Raise, Donate, Support SheRise, Scholarship, Career, Tech, Opportunities, Job Listings"
-        />
+        <meta property="og:image" content={CommonPageHelmet.ogImage} />
+        <meta property="og:url" content={CommonPageHelmet.ogURL} />
+        <meta property="og:type" content={CommonPageHelmet.ogType} />
+        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
       </Helmet>
       <div className="scholarship">
         <div className="heading-scholarship">
