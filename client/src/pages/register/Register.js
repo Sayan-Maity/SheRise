@@ -94,7 +94,7 @@ const Register = () => {
   return (
     <>
       <div className="register">
-      <Helmet>
+        <Helmet>
           <title>{DynamicTitleHelmet.RegisterPageTitle}</title>
           <meta name="description" content={CommonPageHelmet.description} />
           <meta name="keywords" content={CommonPageHelmet.keywords} />
