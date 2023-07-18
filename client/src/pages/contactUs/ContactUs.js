@@ -12,7 +12,7 @@ const ContactUs = () => {
     <>
       <Navbar />
       <Helmet>
-        <title>{DynamicTitleHelmet.LandingPageTitle}</title>
+        <title>{DynamicTitleHelmet.ContactPageTitle}</title>
         <meta name="description" content={CommonPageHelmet.description} />
         <meta name="keywords" content={CommonPageHelmet.keywords} />
         <meta property="og:title" content={CommonPageHelmet.ogTitle} />
