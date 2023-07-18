@@ -7,6 +7,7 @@ import ProfileCard from "../../components/profilecard/ProfileCard";
 import BookmarkSection from "../../components/bookmarksection/BookmarkSection";
 import xxxxx from "../../assets/png/dashboardAvatar.png";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Dashboard = () => {
   const [user, setUser] = useContext(UserContext);
@@ -48,17 +49,21 @@ const Dashboard = () => {
   return (
     <>
       <div className="dashboard">
-        <Helmet>
-          <title>SheRise | Dashboard</title>
-          <meta
-            name="description"
-            content="SheRise's User dashboard. All the user related information got during the registration is displayed here. "
-          />
-          <meta
-            name="keywords"
-            content="Dashboard, User's Personal Info, User's space, Career, Tech, Opportunities, Job Listings"
-          />
-        </Helmet>
+      <Helmet>
+        <title>{DynamicTitleHelmet.DashboardPageTitle}</title>
+        <meta name="description" content={CommonPageHelmet.description} />
+        <meta name="keywords" content={CommonPageHelmet.keywords} />
+        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
+        <meta
+          property="og:description"
+          content={CommonPageHelmet.ogDescription}
+        />
+        <meta property="og:image" content={CommonPageHelmet.ogImage} />
+        <meta property="og:url" content={CommonPageHelmet.ogURL} />
+        <meta property="og:type" content={CommonPageHelmet.ogType} />
+        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
+      </Helmet>
         <div className="maindashboard">
           <div className="dashboard-column">
             {/* ========= Greeting Section ========= */}
