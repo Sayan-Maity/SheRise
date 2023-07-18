@@ -5,21 +5,26 @@ import "../../components/sidebar/Sidebar.css";
 import "./ContactUs.css";
 import Contact from "../../assets/svg/Contact.svg";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const ContactUs = () => {
   return (
     <>
       <Navbar />
       <Helmet>
-        <title>SheRise | Contact Us</title>
+        <title>{DynamicTitleHelmet.LandingPageTitle}</title>
+        <meta name="description" content={CommonPageHelmet.description} />
+        <meta name="keywords" content={CommonPageHelmet.keywords} />
+        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
         <meta
-          name="description"
-          content="SheRise's support team is very much active, you can contact us anytime and we will get back to you within 24 hours. "
+          property="og:description"
+          content={CommonPageHelmet.ogDescription}
         />
-        <meta
-          name="keywords"
-          content="Support Team, Contact Us, 24 hours, service, Career, Tech, Opportunities, Job Listings"
-        />
+        <meta property="og:image" content={CommonPageHelmet.ogImage} />
+        <meta property="og:url" content={CommonPageHelmet.ogURL} />
+        <meta property="og:type" content={CommonPageHelmet.ogType} />
+        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
       </Helmet>
       <div className="slanting-contact-div"></div>
       <div className="contact">
