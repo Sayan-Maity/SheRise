@@ -23,5 +23,13 @@ export const DynamicTitleHelmet = {
   ContactPageTitle: "SheRise | Contact Us",
   LoginPageTitle: "SheRise | Login",
   RegisterPageTitle: "SheRise | Register",
+  DashboardPageTitle: "SheRise | Dashboard",
+  ConferencePageTitle: "SheRise | Conferences",
+  HackathonPageTitle: "SheRise | Hackathons",
+  HiringPageTitle: "SheRise | Hiring",
+  InternshipPageTitle: "SheRise | Internship",
+  WorkshopPageTitle: "SheRise | Workshop",
+  MentorPageTitle: "SheRise | Mentor",
+  AssistantPageTitle: "SheRise | AI Assistant",
 
 };
