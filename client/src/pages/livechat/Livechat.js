@@ -5,12 +5,24 @@ import { HiOutlineBuildingOffice2 } from 'react-icons/hi2';
 import { HiOutlineChatBubbleOvalLeftEllipsis } from 'react-icons/hi2';
 
 import './Livechat.css'
+import { Helmet } from 'react-helmet';
 
 
 const Livechat = () => {
   return (
     <>
       <div className='livechat'>
+      <Helmet>
+        <title>SheRise | Mentor</title>
+        <meta
+          name="description"
+          content="SheRise provides user with Personalized Mentor to help them with their career and do live one-on-one chat in real time.  "
+        />
+        <meta
+          name="keywords"
+          content="Personalized Mentor, Help, Support, Career, Tech, Opportunities, Job Listings"
+        />
+      </Helmet>
         <div className='livechat-inner'>
 
           <div className="mentor-group">
