@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "../../components/sidebar/Sidebar.css";
 import "./Developers.css";
-import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Developers = () => {
   // useEffect(() => {
@@ -15,15 +15,19 @@ const Developers = () => {
       <div className="developers">
         <Navbar />
         <Helmet>
-          <title>SheRise | Developers</title>
+          <title>{DynamicTitleHelmet.DevelopersPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
           <meta
-            name="description"
-            content="SheRise is an open source project, we are a team of developers who are working on this project to make job searching easier for women and give them enough opportunities."
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
           />
-          <meta
-            name="keywords"
-            content="Project, Management, Team, Developers, Career, Tech, Opportunities, Job Listings"
-          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
         </Helmet>
         <div className="heading">
           <p>Meet Our Team</p>
