@@ -11,12 +11,7 @@ import Footer from "../../components/footer/Footer";
 import Dashboard from "../dashBoard/Dashboard";
 // import Testimonial from '../../components/testimonial/Testimonial';
 import Cookies from "js-cookie";
-import Girl3 from "../../assets/images/girl13.jpg";
-import Girl2 from "../../assets/images/girl11.jpeg";
-import Girl5 from "../../assets/images/girl15.jpg";
-import Girl4 from "../../assets/images/girl14.jpg";
-import Girl from "../../assets/images/girl2.jpg";
-import Girl6 from "../../assets/images/girl16.jpg";
+
 import companyLogo1 from "../../assets/images/company-logo1.png";
 import companyLogo2 from "../../assets/images/company-logo2.png";
 import companyLogo3 from "../../assets/images/company-logo3.png";
@@ -25,23 +20,9 @@ import companyLogo5 from "../../assets/images/company-logo5.png";
 import companyLogo6 from "../../assets/images/company-logo6.png";
 import companyLogo7 from "../../assets/images/microsoft-logo.png";
 
-import service1 from "../../assets/images/service1.webp";
-import service2 from "../../assets/images/service2.svg";
-import service3 from "../../assets/images/service3.webp";
-import service4 from "../../assets/images/service4.webp";
-import service5 from "../../assets/images/service5.webp";
-import service6 from "../../assets/images/service6.webp";
-import service7 from "../../assets/images/service7.webp";
-import service8 from "../../assets/images/service8.webp";
-// import Image from "react-image-webp";
-// import {isWebpSupported} from 'react-image-webp/dist/utils';
-
-import whysherise from "../../assets/images/whysherise.svg";
-
 import mentor1 from "../../assets/images/mentor3.png";
 import mentor2 from "../../assets/images/mentor6.png";
 import mentor3 from "../../assets/images/mentor5.png";
-import Loader from "../../components/Loader/Loader";
 import { Helmet } from "react-helmet";
 import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 // import { Button } from "@mui/material"; // don't use this import path
