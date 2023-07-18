@@ -3,9 +3,10 @@ import Axios from "axios";
 import "./Internship.css";
 import { CiBadgeDollar } from "react-icons/ci";
 import InternshipCard from "../../components/cards/internship/InternshipCard";
-import InternshipBanner from "../../assets/svg/type3.svg"
-import InternshipBanner2 from "../../assets/svg/internBanner.svg"
-import {Helmet} from "react-helmet";
+import InternshipBanner from "../../assets/svg/type3.svg";
+import InternshipBanner2 from "../../assets/svg/internBanner.svg";
+import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Internship = () => {
   const [internships, setInternships] = useState([]);
@@ -25,45 +26,68 @@ const Internship = () => {
     }
     call();
   }, []);
-  
+
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
-  }
+  };
 
-  const filteredInternships = internships.filter(internship => {
+  const filteredInternships = internships.filter((internship) => {
     return internship.position.toLowerCase().includes(searchTerm.toLowerCase());
   });
-
 
   return (
     <>
       <div className="internship">
-      <Helmet >
-          <title>SheRise | Internships</title>
+        <Helmet>
+          <title>{DynamicTitleHelmet.InternshipPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
           <meta
-            name="description"
-            content="SheRise's Internship Page. Here all the job listing related to the Internship tags are dynamically listed down here. "
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
           />
-          <meta
-            name="keywords"
-            content="Internship, Career, Tech, Opportunities, Job Listings"
-          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
         </Helmet>
         <div className="internship-banner-section">
           <div className="left">
-            <div className="left-image"><img src={InternshipBanner2} alt={InternshipBanner2} className="internship-banner-image" /></div>
-            <div className="internship-heading"> <p> Internships</p></div>
+            <div className="left-image">
+              <img
+                src={InternshipBanner2}
+                alt={InternshipBanner2}
+                className="internship-banner-image"
+              />
+            </div>
+            <div className="internship-heading">
+              {" "}
+              <p> Internships</p>
+            </div>
           </div>
           <div className="right">
-            <div className="left-image"><img src={InternshipBanner} alt={InternshipBanner} className="internship-banner-image" /></div>
-
+            <div className="left-image">
+              <img
+                src={InternshipBanner}
+                alt={InternshipBanner}
+                className="internship-banner-image"
+              />
+            </div>
           </div>
         </div>
         <div className="searchbar-card-opportunity">
           <div className="searchbar-card">
-            <div className='internship-searchbar'>
-              <input type="text" placeholder="Search Internships" onChange={handleSearch} />
-              <div className="search-btn"><p>Search</p></div>
+            <div className="internship-searchbar">
+              <input
+                type="text"
+                placeholder="Search Internships"
+                onChange={handleSearch}
+              />
+              <div className="search-btn">
+                <p>Search</p>
+              </div>
             </div>
             <section className="internships-con">
               {filteredInternships.map((internship) => {
@@ -86,7 +110,10 @@ const Internship = () => {
                 <div className="opportunity-list1">
                   <div className="left opportunity-image2"></div>
                   <div className="right">
-                    <p>Women Code to Win 2023 - India | PPIs & ₹4,50,000 in prizes!</p>
+                    <p>
+                      Women Code to Win 2023 - India | PPIs & ₹4,50,000 in
+                      prizes!
+                    </p>
                   </div>
                 </div>
                 <div className="opportunity-list1">
@@ -95,13 +122,11 @@ const Internship = () => {
                     <p>IIM Lucknow's Manfest-Varchasva 2022-23</p>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };
