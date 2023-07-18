@@ -6,6 +6,7 @@ import HackathonBanner from "../../assets/svg/type3.svg";
 import HackathonBanner2 from "../../assets/svg/hackathonBanner3.svg";
 import HackathonCard from "../../components/cards/hackathoncard/HackathonCard";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Hackathon = () => {
   const [hackathons, setHackathons] = useState([]);
@@ -36,15 +37,19 @@ const Hackathon = () => {
   return (
     <div className="hackathon">
       <Helmet>
-        <title>SheRise | Hackathons</title>
+        <title>{DynamicTitleHelmet.HackathonPageTitle}</title>
+        <meta name="description" content={CommonPageHelmet.description} />
+        <meta name="keywords" content={CommonPageHelmet.keywords} />
+        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
         <meta
-          name="description"
-          content="SheRise's Hackathon Page. Here all the job listing related to the Hackathon tags are dynamically listed down here. "
+          property="og:description"
+          content={CommonPageHelmet.ogDescription}
         />
-        <meta
-          name="keywords"
-          content="Hackathon, Career, Tech, Opportunities, Job Listings"
-        />
+        <meta property="og:image" content={CommonPageHelmet.ogImage} />
+        <meta property="og:url" content={CommonPageHelmet.ogURL} />
+        <meta property="og:type" content={CommonPageHelmet.ogType} />
+        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
       </Helmet>
       <div className="hackathon-banner-section">
         <div className="left">
