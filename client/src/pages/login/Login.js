@@ -9,6 +9,7 @@ import { UserContext } from "../../utils/userContext";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
+import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -87,15 +88,19 @@ const Login = () => {
     <>
       <div className="login">
         <Helmet>
-          <title>SheRise | Login</title>
+          <title>{DynamicTitleHelmet.LoginPageTitle}</title>
+          <meta name="description" content={CommonPageHelmet.description} />
+          <meta name="keywords" content={CommonPageHelmet.keywords} />
+          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
           <meta
-            name="description"
-            content="SheRise's Login Page. Login to your account and get access to all the features. "
+            property="og:description"
+            content={CommonPageHelmet.ogDescription}
           />
-          <meta
-            name="keywords"
-            content="Login, Career, Tech, Opportunities, Job Listings"
-          />
+          <meta property="og:image" content={CommonPageHelmet.ogImage} />
+          <meta property="og:url" content={CommonPageHelmet.ogURL} />
+          <meta property="og:type" content={CommonPageHelmet.ogType} />
+          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
+          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
         </Helmet>
         <h1>Login</h1>
 
