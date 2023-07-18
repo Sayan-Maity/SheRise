@@ -4,8 +4,8 @@ import { CiShop } from "react-icons/ci";
 
 import "./Workshop.css";
 import WorkshopCard from "../../components/cards/workshopcard/WorkshopCard";
-import WorkshopBanner from "../../assets/svg/type3.svg"
-import WorkshopBanner2 from "../../assets/svg/workshopBanner2.svg"
+import WorkshopBanner from "../../assets/svg/type3.svg";
+import WorkshopBanner2 from "../../assets/svg/workshopBanner2.svg";
 import { Helmet } from "react-helmet";
 
 const Workshop = () => {
@@ -15,7 +15,9 @@ const Workshop = () => {
   useEffect(() => {
     async function call() {
       try {
-        let resp = await Axios.get( `${process.env.REACT_APP_SERVER_URL}/workshops`)
+        let resp = await Axios.get(
+          `${process.env.REACT_APP_SERVER_URL}/workshops`
+        );
         setWorkshops(resp.data);
         // console.log(resp.data);
       } catch (err) {
@@ -27,17 +29,16 @@ const Workshop = () => {
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
-  }
+  };
 
-  const filteredWorkshops = workshops.filter(workshop => {
+  const filteredWorkshops = workshops.filter((workshop) => {
     return workshop.title.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-
   return (
     <>
-            <div className="workshop">
-            <Helmet>
+      <div className="workshop">
+        <Helmet>
           <title>SheRise | Workshops</title>
           <meta
             name="description"
@@ -50,19 +51,39 @@ const Workshop = () => {
         </Helmet>
         <div className="workshop-banner-section">
           <div className="left">
-            <div className="left-image"><img src={WorkshopBanner2} alt={WorkshopBanner2} className="workshop-banner-image" /></div>
-            <div className="workshop-heading"> <p> Workshops</p></div>
+            <div className="left-image">
+              <img
+                src={WorkshopBanner2}
+                alt={WorkshopBanner2}
+                className="workshop-banner-image"
+              />
+            </div>
+            <div className="workshop-heading">
+              {" "}
+              <p> Workshops</p>
+            </div>
           </div>
           <div className="right">
-            <div className="left-image"><img src={WorkshopBanner} alt={WorkshopBanner} className="workshop-banner-image" /></div>
-
+            <div className="left-image">
+              <img
+                src={WorkshopBanner}
+                alt={WorkshopBanner}
+                className="workshop-banner-image"
+              />
+            </div>
           </div>
         </div>
         <div className="searchbar-card-opportunity">
           <div className="searchbar-card">
-            <div className='workshop-searchbar'>
-              <input type="text" placeholder="Search Workshops" onChange={handleSearch} />
-              <div className="search-btn"><p>Search</p></div>
+            <div className="workshop-searchbar">
+              <input
+                type="text"
+                placeholder="Search Workshops"
+                onChange={handleSearch}
+              />
+              <div className="search-btn">
+                <p>Search</p>
+              </div>
             </div>
             <section className="workshops-con">
               {filteredWorkshops.map((workshop) => {
@@ -85,7 +106,10 @@ const Workshop = () => {
                 <div className="opportunity-list1">
                   <div className="left opportunity-image2"></div>
                   <div className="right">
-                    <p>Women Code to Win 2023 - India | PPIs & ₹4,50,000 in prizes!</p>
+                    <p>
+                      Women Code to Win 2023 - India | PPIs & ₹4,50,000 in
+                      prizes!
+                    </p>
                   </div>
                 </div>
                 <div className="opportunity-list1">
@@ -94,13 +118,11 @@ const Workshop = () => {
                     <p>IIM Lucknow's Manfest-Varchasva 2022-23</p>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };
