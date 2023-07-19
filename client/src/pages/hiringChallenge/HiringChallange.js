@@ -4,8 +4,7 @@ import "./HiringChallange.css";
 import HiringCard from "../../components/cards/hiringcard/HiringCard";
 import HiringBanner from "../../assets/svg/type3.svg";
 import HiringBanner2 from "../../assets/svg/hiringBanner.svg";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 const HiringChallange = () => {
   const [hirings, setHirings] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -36,21 +35,7 @@ const HiringChallange = () => {
   return (
     <>
       <div className="hiring">
-      <Helmet>
-        <title>{DynamicTitleHelmet.HiringPageTitle}</title>
-        <meta name="description" content={CommonPageHelmet.description} />
-        <meta name="keywords" content={CommonPageHelmet.keywords} />
-        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-        <meta
-          property="og:description"
-          content={CommonPageHelmet.ogDescription}
-        />
-        <meta property="og:image" content={CommonPageHelmet.ogImage} />
-        <meta property="og:url" content={CommonPageHelmet.ogURL} />
-        <meta property="og:type" content={CommonPageHelmet.ogType} />
-        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-      </Helmet>
+        <SEO dynamicTitle="SheRise | Hiring" />
         <div className="hiring-banner-section">
           <div className="left">
             <div className="left-image">

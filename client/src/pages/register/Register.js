@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Register.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
@@ -6,8 +6,7 @@ import Login from "../login/Login";
 
 import Axios from "axios";
 import toast from "react-hot-toast";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -94,21 +93,7 @@ const Register = () => {
   return (
     <>
       <div className="register">
-        <Helmet>
-          <title>{DynamicTitleHelmet.RegisterPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+        <SEO dynamicTitle="SheRise | Register" />
         <h1>Register</h1>
 
         <div className="form_container">

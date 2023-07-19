@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import { CiShop } from "react-icons/ci";
-
 import "./Workshop.css";
 import WorkshopCard from "../../components/cards/workshopcard/WorkshopCard";
 import WorkshopBanner from "../../assets/svg/type3.svg";
 import WorkshopBanner2 from "../../assets/svg/workshopBanner2.svg";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Workshop = () => {
   const [workshops, setWorkshops] = useState([]);
@@ -39,21 +36,7 @@ const Workshop = () => {
   return (
     <>
       <div className="workshop">
-      <Helmet>
-        <title>{DynamicTitleHelmet.WorkshopPageTitle}</title>
-        <meta name="description" content={CommonPageHelmet.description} />
-        <meta name="keywords" content={CommonPageHelmet.keywords} />
-        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-        <meta
-          property="og:description"
-          content={CommonPageHelmet.ogDescription}
-        />
-        <meta property="og:image" content={CommonPageHelmet.ogImage} />
-        <meta property="og:url" content={CommonPageHelmet.ogURL} />
-        <meta property="og:type" content={CommonPageHelmet.ogType} />
-        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-      </Helmet>
+        <SEO dynamicTitle="SheRise | Workshops" />
         <div className="workshop-banner-section">
           <div className="left">
             <div className="left-image">

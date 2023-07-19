@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Login.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
@@ -8,8 +8,7 @@ import { magic } from "../../utils/magic";
 import { UserContext } from "../../utils/userContext";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -87,21 +86,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <Helmet>
-          <title>{DynamicTitleHelmet.LoginPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+        <SEO dynamicTitle="SheRise | Login" />
         <h1>Login</h1>
 
         <div className="form_container">

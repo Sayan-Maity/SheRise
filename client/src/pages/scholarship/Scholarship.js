@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import Navbar from "../../components/navbar/Navbar";
 import "./Scholarship.css";
 import DonateBanner from "../../assets/svg/Donation.svg";
 import { BsArrowRight } from "react-icons/bs";
 import Footer from "../../components/footer/Footer";
-import ReactGA from "react-ga4";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 let stripePromise;
 
@@ -52,21 +50,7 @@ const Scholarship = () => {
   return (
     <>
       <Navbar />
-      <Helmet>
-        <title>{DynamicTitleHelmet.ScholarshipPageTitle}</title>
-        <meta name="description" content={CommonPageHelmet.description} />
-        <meta name="keywords" content={CommonPageHelmet.keywords} />
-        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-        <meta
-          property="og:description"
-          content={CommonPageHelmet.ogDescription}
-        />
-        <meta property="og:image" content={CommonPageHelmet.ogImage} />
-        <meta property="og:url" content={CommonPageHelmet.ogURL} />
-        <meta property="og:type" content={CommonPageHelmet.ogType} />
-        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-      </Helmet>
+       <SEO dynamicTitle="SheRise | Scholarship" />
       <div className="scholarship">
         <div className="heading-scholarship">
           <div className="top-heading">

@@ -23,8 +23,7 @@ import companyLogo7 from "../../assets/images/microsoft-logo.png";
 import mentor1 from "../../assets/images/mentor3.png";
 import mentor2 from "../../assets/images/mentor6.png";
 import mentor3 from "../../assets/images/mentor5.png";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 // import { Button } from "@mui/material"; // don't use this import path
 // import Button from "@mui/material/Button"; // instead use this import path...
 
@@ -33,25 +32,10 @@ const Testimonial = lazy(() =>
 );
 
 const LandingPage = () => {
- 
   return (
     <>
       <Navbar />
-      <Helmet>
-          <title>{DynamicTitleHelmet.LandingPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+      <SEO dynamicTitle="SheRise | Home" />
       <div className="landingPage">
         {/* ============================  Landing Page  ============================= */}
         <div className="landingPage-main">
@@ -69,17 +53,17 @@ const LandingPage = () => {
                 career advancement.{" "}
               </p>
             </div>
-            <div className="start-btn">
+            <div>
               {Cookies.get("token") ? (
-                <>
-                  <NavLink
-                    to="/main/dashboard"
-                    key={<Dashboard />}
-                    className="nav-link"
-                  >
+                <NavLink
+                  to="/main/dashboard"
+                  key={<Dashboard />}
+                  className="nav-link"
+                >
+                  <div className="start-btn">
                     <p>Get Started</p>
-                  </NavLink>
-                </>
+                  </div>
+                </NavLink>
               ) : (
                 <>
                   <NavLink to="/login" key={<Dashboard />} className="nav-link">

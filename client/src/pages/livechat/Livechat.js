@@ -10,28 +10,13 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { HiOutlineChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
 
 import "./Livechat.css";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Livechat = () => {
   return (
     <>
       <div className="livechat">
-        <Helmet>
-          <title>{DynamicTitleHelmet.MentorPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+        <SEO dynamicTitle="SheRise | Mentor" />
         <div className="livechat-inner">
           <div className="mentor-group">
             <div className="mentor-groupchat-div">

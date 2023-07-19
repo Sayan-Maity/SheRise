@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import "./Hackathon.css";
-import { SiPluscodes } from "react-icons/si";
 import HackathonBanner from "../../assets/svg/type3.svg";
 import HackathonBanner2 from "../../assets/svg/hackathonBanner3.svg";
 import HackathonCard from "../../components/cards/hackathoncard/HackathonCard";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Hackathon = () => {
   const [hackathons, setHackathons] = useState([]);
@@ -36,21 +34,7 @@ const Hackathon = () => {
 
   return (
     <div className="hackathon">
-      <Helmet>
-        <title>{DynamicTitleHelmet.HackathonPageTitle}</title>
-        <meta name="description" content={CommonPageHelmet.description} />
-        <meta name="keywords" content={CommonPageHelmet.keywords} />
-        <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-        <meta
-          property="og:description"
-          content={CommonPageHelmet.ogDescription}
-        />
-        <meta property="og:image" content={CommonPageHelmet.ogImage} />
-        <meta property="og:url" content={CommonPageHelmet.ogURL} />
-        <meta property="og:type" content={CommonPageHelmet.ogType} />
-        <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-        <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-      </Helmet>
+      <SEO dynamicTitle="SheRise | Hackathons" />
       <div className="hackathon-banner-section">
         <div className="left">
           <div className="left-image">

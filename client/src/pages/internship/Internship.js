@@ -5,8 +5,7 @@ import { CiBadgeDollar } from "react-icons/ci";
 import InternshipCard from "../../components/cards/internship/InternshipCard";
 import InternshipBanner from "../../assets/svg/type3.svg";
 import InternshipBanner2 from "../../assets/svg/internBanner.svg";
-import { Helmet } from "react-helmet";
-import { CommonPageHelmet, DynamicTitleHelmet } from "../../constants/SEO";
+import SEO from "../../components/SEO";
 
 const Internship = () => {
   const [internships, setInternships] = useState([]);
@@ -38,21 +37,7 @@ const Internship = () => {
   return (
     <>
       <div className="internship">
-        <Helmet>
-          <title>{DynamicTitleHelmet.InternshipPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+        <SEO dynamicTitle="SheRise | Internships" />
         <div className="internship-banner-section">
           <div className="left">
             <div className="left-image">

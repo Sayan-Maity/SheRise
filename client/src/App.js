@@ -19,6 +19,7 @@ import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet";
 import { DynamicTitleHelmet } from "./constants/SEO";
 import { CommonPageHelmet } from "./constants/SEO";
+import SEO from "./components/SEO";
 
 // import LandingPage from "./pages/landingPage/LandingPage";
 // import Developers from "./pages/developers/Developers";
@@ -92,21 +93,7 @@ const App = () => {
     <UserContext.Provider value={[user, setUser]}>
       <Toaster />
       <Router>
-        <Helmet>
-          <title>{DynamicTitleHelmet.LandingPageTitle}</title>
-          <meta name="description" content={CommonPageHelmet.description} />
-          <meta name="keywords" content={CommonPageHelmet.keywords} />
-          <meta property="og:title" content={CommonPageHelmet.ogTitle} />
-          <meta
-            property="og:description"
-            content={CommonPageHelmet.ogDescription}
-          />
-          <meta property="og:image" content={CommonPageHelmet.ogImage} />
-          <meta property="og:url" content={CommonPageHelmet.ogURL} />
-          <meta property="og:type" content={CommonPageHelmet.ogType} />
-          <meta property="og:site_name" content={CommonPageHelmet.ogSiteName} />
-          <meta property="og:locale" content={CommonPageHelmet.ogLocale} />
-        </Helmet>
+        <SEO dynamicTitle="SheRise | Home" />
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
