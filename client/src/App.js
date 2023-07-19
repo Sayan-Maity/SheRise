@@ -16,9 +16,6 @@ import Cancel from "./pages/scholarship/donation/Cancel";
 import Loader from "./components/Loader/Loader";
 import { hotjar } from "react-hotjar";
 import ReactGA from "react-ga4";
-import { Helmet } from "react-helmet";
-import { DynamicTitleHelmet } from "./constants/SEO";
-import { CommonPageHelmet } from "./constants/SEO";
 import SEO from "./components/SEO";
 
 // import LandingPage from "./pages/landingPage/LandingPage";
