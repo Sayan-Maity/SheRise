@@ -14,3 +14,6 @@ body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+::selection {
+    background: #ffdfea;
+}
