@@ -1,14 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import '../footer/Footer.css'
-import { BsTwitter }from "react-icons/bs";
-import { AiFillInstagram, AiFillLinkedin, AiOutlineCopyright }from "react-icons/ai";
-import { HiLocationMarker }from "react-icons/hi";
-import { FaFacebookF, FaEnvelope }from "react-icons/fa";
-import { BsGithub, BsFillTelephoneFill }from "react-icons/bs";
-import LandingPage from '../../pages/landingPage/LandingPage';
-import Developers from '../../pages/developers/Developers';
-import ContactUs from '../../pages/contactUs/ContactUs';
+import { AiOutlineCopyright }from "react-icons/ai";
 
 const Footer = () => {
   return (
